@@ -40,24 +40,25 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        //extractKeys($target_file,true);
-        extractKeys($target_file,false);
+        flushData();
+        extractKeys($target_file);
+        //extractKeys($target_file,false);
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
 }
 
 $keyList = array();
-function extractKeys($filePath,$insertKey)
+function extractKeys($filePath)
 {
 	$keyList = array();
 	$file = fopen($filePath, "r");
 	$fileContent = file_get_contents($filePath);//fread($file, filesize($filePath));
 	$jsonObject = json_decode($fileContent,true);
-	browseNode("root",$jsonObject,0,$insertKey);
+	browseNode(insertKey("root"),$jsonObject,0);
 }
 
-function browseNode($parent,$jsonObject,$level,$insertKey)
+function browseNode($parent,$jsonObject,$level)
 {
 	$keyList = array();
 	if(!is_array($jsonObject))
@@ -68,20 +69,18 @@ function browseNode($parent,$jsonObject,$level,$insertKey)
 		//echo $row;
 		if(!is_int($row))
 		{
-			if($insertKey)
-				insertKey($row);
-			else
-			{
-				if(is_array($val))
-			makeAssoc($parent, $row, 0, $level);
+			
+			$child_id = insertKey($row);
+			echo "<br/> ".$child_id."-".$row."<br/>";
+			if(is_array($val))
+				makeAssoc($parent, $child_id, 0, $level);
 			else 
-				makeAssoc($parent, $row, 1, $level);
-			}
+				makeAssoc($parent, $child_id, 1, $level);
+			
+			browseNode($child_id,$val,$level,$insertKey);
 		}
-			browseNode($row,$val,$level,$insertKey);
+			
 	}
 }
-
-
-
+// echo getKeyId("appCommonUI");
 ?>

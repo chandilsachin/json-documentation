@@ -1,6 +1,6 @@
 <?php 
-include 'controller/db.php';
-// echo getChildren(3102);
+include 'controller/infoUpdateOperation.php';
+echo doSearch("str");
 ?>
 <a href="uploadFile.html">upload file</a><br/>
 <a href="webservice.php">web services</a><br/>

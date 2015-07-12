@@ -13,9 +13,20 @@
 	
 </script>
 <style type="text/css">
-	/* .code{
-		border:solid 1px black;
-	} */
+	span{
+	//border:solid 1px black;
+	}
+	.jsonKey
+	{
+		color:green;
+		cursor:pointer;
+	}
+	.hide{
+		display:none;
+	}
+	.show{
+		display: inline-block;
+	}
 </style>
 </head>
 <body>
@@ -24,6 +35,8 @@
 			<option>Select</option>
 		</select>
 	</div>
+	<br/>
+	<div>Search: <input id="text_search" type="text"/></div>
 	<pre>
 		<code class="json" id="object_container">
 		
