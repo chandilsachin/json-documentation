@@ -2,7 +2,7 @@
 class Constants {
 	public static $servername = "localhost";
 	public static $username = "root";
-	public static $password = "root";
+	public static $password = "";
 	public static $dbname = "behavioral_file_db";
 	
 	public static $TABLE_keys = "`keys`";

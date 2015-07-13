@@ -1,6 +1,6 @@
 var WsClient = new WSClient();
 function WSClient() {
-	this.url = "http://localhost/module_json_documentation/webservice.php";
+	this.url = "http://localhost/Module_Documentation1/webservice.php";
 	this.fetchModules = function(callback) {
 		var pl = new SOAPClientParameters();
 		SOAPClient.invoke(this.url, "getModules", pl, true, function(r) {
