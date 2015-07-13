@@ -270,9 +270,11 @@ function makeListAndArrange(leftElement, id,showParentObject) {
 		leftElement.nextAll().each(function() {
 			$(this).detach();
 		});
+		var addButton = $("<button onclick='addKey("+id+")'>Add key</button>");
 		var select_1 = $("<select />");
 		$("#navigation_bar").append($("<b> > </b>"));
 		$("#navigation_bar").append(select_1);
+		$("#navigation_bar").append(addButton);
 
 		input_select.fillData(select_1, selectItem);
 		input_select.fillData(select_1, r);
@@ -292,6 +294,8 @@ function makeListAndArrange(leftElement, id,showParentObject) {
 function prepareModuleList() {
 	WsClient.fetchModules(function(r) {
 		input_select.fillData($("#module_list"), r);
+		var addButton = $("<button onclick='addKey()'>Add key</button>");
+		$("#navigation_bar").append(addButton);
 		var fetch = this.fetchChild;
 		$("#module_list").change(function() {
 			makeListAndArrange($(this), $(this).val(),$(this).val());

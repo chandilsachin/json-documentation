@@ -240,6 +240,12 @@ function getChildrenListOf($parent_id, $child_id) {
 	$conn->close ();
 	return $string;
 }
+
+function saveKey($parent_id,$key_name)
+{
+	makeAssoc($parent_id, insertKey($key_name), 1, 0);
+}
+
 function makeAnEntry($row) {
 	return "{\"id\":\"" . $row ['id'] . "\",\"name\":\"" . $row ['name'] . "\"}";
 }
