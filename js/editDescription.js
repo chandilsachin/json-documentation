@@ -1,6 +1,7 @@
 var WsClient = new WSClient();
 function WSClient() {
-	this.url = "http://localhost/Module_Documentation1/webservice.php";
+	//this.url = "http://localhost/Module_Documentation1/webservice.php";
+	this.url = "http://localhost/module_json_documentation/webservice.php";
 	this.fetchModules = function(callback) {
 		var pl = new SOAPClientParameters();
 		SOAPClient.invoke(this.url, "getModules", pl, true, function(r) {
@@ -49,6 +50,15 @@ function WSClient() {
 		});
 	};
 
+	this.addKey = function(parentId,keyName, callback) {
+		var pl = new SOAPClientParameters();
+		pl.add("parent_id", parentId);
+		pl.add("key_name", keyName);
+		SOAPClient.invoke(this.url, "addKey", pl, false, function(r) {
+			r = JSON.parse(r);
+			callback(r);
+		});
+	};
 }
 
 function pareparePage() {
@@ -80,6 +90,8 @@ function prepareSearch()
 		
 	});
 }
+
+
 
 
 
@@ -266,31 +278,39 @@ function makeListAndArrange(leftElement, id,showParentObject) {
 	WsClient.fetchChild(id, function(r) {
 		 //alert(JSON.stringify(r, null, 4));
 		var selectItem = JSON.parse("[{\"id\":0,\"name\":\"Select\"}]");
+		var select_1 = $("<select />");
 		if (r.length < 1) {
 			leftElement.nextAll().each(function() {
 				$(this).detach();
 			});
-			return;
+			
 		}
+		else
+		{
+			input_select.fillData(select_1, selectItem);
+			input_select.fillData(select_1, r);
+			$("#navigation_bar").append($("<b> > </b>"));
+			$("#navigation_bar").append(select_1);
+			select_1.change(function() {
+				var str = "";
+				str += $(this).val() + " ";
+				// alert(str);
+
+				makeListAndArrange($(this), $(this).val(),$(this).val());
+			});
+		}
+			
+		
 		leftElement.nextAll().each(function() {
 			$(this).detach();
 		});
 		var addButton = $("<button onclick='addKey("+id+")'>Add key</button>");
-		var select_1 = $("<select />");
+		
 		$("#navigation_bar").append($("<b> > </b>"));
 		$("#navigation_bar").append(select_1);
 		$("#navigation_bar").append(addButton);
 
-		input_select.fillData(select_1, selectItem);
-		input_select.fillData(select_1, r);
-
-		select_1.change(function() {
-			var str = "";
-			str += $(this).val() + " ";
-			// alert(str);
-
-			makeListAndArrange($(this), $(this).val(),$(this).val());
-		});
+		
 	});
 
 }
@@ -303,10 +323,35 @@ function prepareModuleList() {
 		$("#navigation_bar").append(addButton);
 		var fetch = this.fetchChild;
 		$("#module_list").change(function() {
+			//alert($(this).val());
 			makeListAndArrange($(this), $(this).val(),$(this).val());
 		});
 	});
 
+}
+
+function addKey(parentId)
+{
+	var textBox = $("<input type='text'/>");
+	textBox.keyup(function(event){
+		if(event.which == 13)
+		{
+			//alert(parentId+"="+$(this).val());
+			WsClient.addKey(parentId,$(this).val(),function(res){
+				if(res.success)
+				{
+					alert("added!");
+					$(this).val("");
+				}
+				else
+					alert("failed!");
+					
+			});
+		}
+			
+	});
+	$("#navigation_bar").append(textBox);
+	
 }
 
 function getUrlParameter(sParam)

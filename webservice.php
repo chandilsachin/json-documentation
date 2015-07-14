@@ -27,6 +27,10 @@ $server->register( "fetchDesc", array ('id' => 'xsd:integer'), array (
 		'return' => 'xsd:string'
 ),"urn:docOpeRequest" );
 
+$server->register( "addKey", array ('parent_id' => 'xsd:integer','key_name' => 'xsd:string'), array (
+		'return' => 'xsd:string'
+),"urn:docOpeRequest" );
+
 $HTTP_RAW_POST_DATA = isset ( $HTTP_RAW_POST_DATA ) ? $HTTP_RAW_POST_DATA : '';
 $server->service ( $HTTP_RAW_POST_DATA );
 ?>

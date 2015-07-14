@@ -36,4 +36,9 @@ function fetchDesc($id)
 	return $res;
 }
 
+function addKey($parent_id,$key_name)
+{
+	return saveKey($parent_id, $key_name);
+}
+
 ?>

@@ -32,7 +32,7 @@ function insertKey($key) {
 	
 	$sql = "INSERT INTO " . Constants::$TABLE_keys . "(name) VALUES ('$key')";
 	if ($conn->query ( $sql ) === TRUE) {
-		echo "New record created successfully=$key<br/>";
+		//echo "New record created successfully=$key<br/>";
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}
@@ -40,6 +40,28 @@ function insertKey($key) {
 	$conn->close ();
 	return getKeyId ( $key );
 }
+
+function deleteKey($key_id) {
+	// Create connection
+	$conn = new mysqli ( Constants::$servername, Constants::$username, Constants::$password, Constants::$dbname );
+	
+	$sql = "DELETE " . Constants::$TABLE_keys . " WHERE id = '$key_id'";
+	if ($conn->query ( $sql ) === TRUE) {
+		echo "record deleted=$key<br/>";
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+
+	$conn->close ();
+}
+
+function openDB()
+{
+	return $conn = new mysqli ( Constants::$servername, Constants::$username, Constants::$password, Constants::$dbname );
+}
+
+
+
 function getKeyId($key) {
 	$conn = new mysqli ( Constants::$servername, Constants::$username, Constants::$password, Constants::$dbname );
 	// Check connection
@@ -61,6 +83,7 @@ function getKeyId($key) {
 			}
 		}
 	} else {
+		
 		if ($row = $res->fetch_assoc ()) {
 			$id = $row ['id'];
 		}
@@ -80,13 +103,16 @@ function makeAssoc($parent, $child, $leaf, $level) {
 	$sql = "INSERT INTO " . Constants::$TABLE_keys_assoc . "(parent_key_id,child_key_id,leaf_key,level) VALUES ($parent,$child,$leaf,$level)";
 	
 	if ($conn->query ( $sql ) === TRUE) {
-		echo "New record created successfully<br/>";
+		//echo "New record created successfully<br/>";
+		$string = true;
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error . "= ($parent,$child,$leaf,$level)  ";
+		$string = false;
 	}
 	
 	$conn->close ();
 	//echo "$parent,$child,$leaf,$level";
+	return $string;
 }
 function getModulesList() {
 	// Create connection
@@ -243,7 +269,60 @@ function getChildrenListOf($parent_id, $child_id) {
 
 function saveKey($parent_id,$key_name)
 {
-	makeAssoc($parent_id, insertKey($key_name), 1, 0);
+	
+/* 	$conn = new mysqli ( Constants::$servername, Constants::$username, Constants::$password, Constants::$dbname );
+	
+	$conn->autocommit(FALSE);
+	
+	$sql = "INSERT INTO " . Constants::$TABLE_keys . "(name) VALUES ('$key_name')";
+	
+	if ($conn->query ( $sql ) === TRUE) {
+		$child = getKeyId ( $key_name );
+		if($child != -1)
+		{
+			$sql = "INSERT INTO " . Constants::$TABLE_keys_assoc . "(parent_key_id,child_key_id,leaf_key,level) VALUES ($parent,$child,$leaf,$level)";
+			
+			if ($conn->query ( $sql ) === TRUE) {
+				$conn->commit();
+				$string .= "\"success\":true";
+			} else {
+				
+				$conn->rollback();
+				$string .= "\"success\":false";
+			}
+		}
+		else 
+		{
+			
+			$conn->rollback();
+			$string .= "\"success\":false";
+		}
+	} else {
+		
+		$conn->rollback();
+		$string .= "\"success\":false";
+	}
+	
+	
+	$conn->close (); */
+	$string = "{";
+	$child_id = insertKey($key_name);
+	if($child_id != -1)
+	{
+		if(makeAssoc($parent_id, $child_id, 1, 0))
+		{
+			$string .= "\"success\":true";
+		}
+		else 
+		{
+			deleteKey($child_id);
+			$string .= "\"success\":false";
+		}
+	}
+	else
+		$string .= "\"success\":false";
+	$string .= "}";
+	return $string;
 }
 
 function makeAnEntry($row) {
