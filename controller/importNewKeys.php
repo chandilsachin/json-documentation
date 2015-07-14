@@ -77,7 +77,7 @@ function browseNode($parent,$jsonObject,$level)
 			else 
 				makeAssoc($parent, $child_id, 1, $level);
 			
-			browseNode($child_id,$val,$level,$insertKey);
+			browseNode($child_id,$val,$level);
 		}
 			
 	}

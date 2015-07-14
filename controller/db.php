@@ -54,7 +54,7 @@ function getKeyId($key) {
 	if ($res->num_rows > 1) {
 		$sql = "SELECT id FROM " . Constants::$TABLE_keys . " WHERE name='$key' and id not in (SELECT " . Constants::$KEYS_ASSOC_child_key_id . " FROM " . Constants::$TABLE_keys_assoc . ") and id not in (SELECT " . Constants::$KEYS_ASSOC_parent_key_id . " FROM " . Constants::$TABLE_keys_assoc . ")";
 		$res = $conn->query ( $sql );
-		echo "<br/>$sql<br/>".$res->num_rows."#".$key."<br/>";
+		//echo "<br/>$sql<br/>".$res->num_rows."#".$key."<br/>";
 		if ($res->num_rows > 0) {
 			if ($row = $res->fetch_assoc ()) {
 				$id = $row ['id'];
@@ -127,10 +127,10 @@ on " . Constants::$KEYS_id . " = " . Constants::$KEYS_ASSOC_child_key_id . " and
 	$string = "[";
 	if ($res->num_rows > 0) {
 		if ($row = $res->fetch_assoc ()) {
-			$string .= makeAnEntry ( $row );
+			$string .= makeAnEntry1 ( $row );
 		}
 		while ( $row = $res->fetch_assoc () ) {
-			$string .= "," . makeAnEntry ( $row );
+			$string .= "," . makeAnEntry1 ( $row );
 		}
 	}
 	$string .= "]";
@@ -240,7 +240,17 @@ function getChildrenListOf($parent_id, $child_id) {
 	$conn->close ();
 	return $string;
 }
+
+function saveKey($parent_id,$key_name)
+{
+	makeAssoc($parent_id, insertKey($key_name), 1, 0);
+}
+
 function makeAnEntry($row) {
+	return "{\"id\":\"" . $row ['id'] . "\",\"name\":\"" . $row ['name'] . "\"}";
+}
+
+function makeAnEntry1($row) {
 	return "{\"id\":\"" . $row ['id'] . "\",\"name\":\"" . $row ['name'] . "\",\"desc\":\"" . $row ['desc'] . "\"}";
 }
 ?>
