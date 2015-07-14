@@ -148,7 +148,12 @@ function makeKeyValuePair(key,tab,container,desc)
 
 function makeDescLabel(desc,id)
 {
-	return " <span onclick='makeEditable(this)' style='color:blue;'>\""+desc+"\"</span><div id='"+id+"' style='display:inline;'></div>";
+	//if(getUrlParameter("auth") == "true")
+	{
+		return " <span onclick='makeEditable(this)' style='color:blue;'>\""+desc+"\"</span><div id='"+id+"' style='display:inline;'></div>";
+	}
+//	else
+//		return " <span style='color:blue;'>\""+desc+"\"</span><div id='"+id+"' style='display:inline;'></div>";
 }
 
 function makeEditable(ele)
@@ -299,3 +304,17 @@ function prepareModuleList() {
 	});
 
 }
+
+function getUrlParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}    
