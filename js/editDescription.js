@@ -1,7 +1,7 @@
 var WsClient = new WSClient();
 function WSClient() {
-	//this.url = "http://localhost/Module_Documentation1/webservice.php";
-	this.url = "http://localhost/module_json_documentation/webservice.php";
+	this.url = "http://localhost/Module_Documentation1/webservice.php";
+	//this.url = "http://localhost/module_json_documentation/webservice.php";
 	this.fetchModules = function(callback) {
 		var pl = new SOAPClientParameters();
 		SOAPClient.invoke(this.url, "getModules", pl, true, function(r) {
@@ -54,7 +54,16 @@ function WSClient() {
 		var pl = new SOAPClientParameters();
 		pl.add("parent_id", parentId);
 		pl.add("key_name", keyName);
-		SOAPClient.invoke(this.url, "addKey", pl, false, function(r) {
+		SOAPClient.invoke(this.url, "addKey", pl, true, function(r) {
+			r = JSON.parse(r);
+			callback(r);
+		});
+	};
+	
+	this.fetchKeyId = function(keyName, callback) {
+		var pl = new SOAPClientParameters();
+		pl.add("key_name", keyName);
+		SOAPClient.invoke(this.url, "fetchKeyId", pl, true, function(r) {
 			r = JSON.parse(r);
 			callback(r);
 		});
@@ -319,8 +328,13 @@ function makeListAndArrange(leftElement, id,showParentObject) {
 function prepareModuleList() {
 	WsClient.fetchModules(function(r) {
 		input_select.fillData($("#module_list"), r);
-		var addButton = $("<button onclick='addKey()'>Add key</button>");
-		$("#navigation_bar").append(addButton);
+		WsClient.fetchKeyId("root", function(res){
+			if(res.success)
+			{
+				var addButton = $("<button onclick='addKey("+res.keyId+")'>Add key</button>");
+				$("#navigation_bar").append(addButton);
+			}
+		});
 		var fetch = this.fetchChild;
 		$("#module_list").change(function() {
 			//alert($(this).val());

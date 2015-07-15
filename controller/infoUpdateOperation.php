@@ -41,4 +41,16 @@ function addKey($parent_id,$key_name)
 	return saveKey($parent_id, $key_name);
 }
 
+function fetchKeyId($key_name)
+{
+	$id = getKeyId($key_name);
+	$res = "{";
+	if($id != -1)
+		$res .= "\"success\":true,\"keyId\":".$id;
+	else 
+		$res .= "\"success\":false";
+	$res .= "}";
+	return $res;
+}
+
 ?>
