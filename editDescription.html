@@ -1,13 +1,16 @@
 <html>
 <head>
 <title>Module Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.soap.js"></script>
 <script type="text/javascript" src="js/soapclient.js"></script>
 <script type="text/javascript" src="js/jquery.util.js"></script>
 <script type="text/javascript" src="js/editDescription.js"></script>
 <link rel="stylesheet" href="hl-styles/default.css">
+<link rel="stylesheet" href="css/util.dialog.css">
 <script src="js/highlight.pack.js"></script>
+<script src="js/util.dialog.js"></script>
 
 <script type="text/javascript">
 	
@@ -21,35 +24,69 @@
 		color:green;
 		cursor:pointer;
 	}
+	.deleted
+	{
+		color:red;
+		cursor:pointer;
+	}
 	.hide{
 		display:none;
 	}
 	.show{
 		display: inline-block;
 	}
+	.pointer
+	{
+	cursor:pointer;
+	}
+	.link
+	{
+		cursor:pointer;
+		text:blue;
+	}
 </style>
 </head>
 <body>
 	<div id="navigation_bar">
+		<a class="link" href="">Reset Page</a><br/>
 		<span>Select Module:</span> <select id="module_list">
 			<option>Select</option>
 		</select>
 	</div>
+	
 	<br/>
 	
-	<div>Search: <input id="text_search" type="text"/></div>
+	<div>Search: <input id="text_search" type="text"/><button id="btnSearch">Search</button></div>
 	<pre>
 		<code class="json" id="object_container">
 		
 		</code>
 	</pre>
-
-
+	
 </body>
 <script>
 	pareparePage();
+	
 </script>
 <script>
-	hljs.initHighlightingOnLoad();
+
+// to restore object if refreshed.
+	$(document).ready(function(){
+		var Url = new URL();
+		var parentId = Url.getParamValue("parentId");
+		if(parentId)
+			refreshObject(""+parentId,1,'',parentId+"");
+		var tag = Url.getParamValue("search");
+		
+		 if(tag)
+		{
+			var textSearch = $("#text_search");
+			textSearch.val(tag);
+			searchTerm();
+		}
+	});
+	
+	
+	
 </script>
 </html>

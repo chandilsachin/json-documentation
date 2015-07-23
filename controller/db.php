@@ -22,7 +22,13 @@ function flushData() {
 	
 	$conn->close ();
 }
-function insertKey($key) {
+
+function makeProject($project_name,$version)
+{
+    
+}
+
+function insertKey($key,$data_type) {
 	// Create connection
 	$conn = new mysqli ( Constants::$servername, Constants::$username, Constants::$password, Constants::$dbname );
 	// Check connection
@@ -30,7 +36,7 @@ function insertKey($key) {
 		die ( "Connection failed: " . $conn->connect_error );
 	}
 	
-	$sql = "INSERT INTO " . Constants::$TABLE_keys . "(name) VALUES ('$key')";
+	$sql = "INSERT INTO " . Constants::$TABLE_keys . "(" . Constants::$KEYS_name . "," . Constants::$KEYS_data_type . ") VALUES ('$key','$data_type')";
 	if ($conn->query ( $sql ) === TRUE) {
 		//echo "New record created successfully=$key<br/>";
 	} else {
@@ -146,7 +152,7 @@ function getChildrenList($module_id) {
 		die ( "Connection failed: " . $conn->connect_error );
 	}
 	$sql = "SELECT " . Constants::$KEYS_id . "," . Constants::$KEYS_name . "," . Constants::$KEYS_ASSOC_desc . " FROM " . Constants::$TABLE_keys . " inner join " . Constants::$TABLE_keys_assoc . "ka 
-on " . Constants::$KEYS_id . " = " . Constants::$KEYS_ASSOC_child_key_id . " and " . Constants::$KEYS_ASSOC_parent_key_id . "=$module_id";
+on " . Constants::$KEYS_id . " = " . Constants::$KEYS_ASSOC_child_key_id . " and " . Constants::$KEYS_ASSOC_parent_key_id . "=$module_id order by " . Constants::$KEYS_name . "" ;
 	//$sql = "SELECT * FROM " . Constants::$TABLE_keys . " WHERE " . Constants::$KEYS_id . " IN (SELECT " . Constants::$KEYS_ASSOC_child_key_id . " FROM " . Constants::$TABLE_keys_assoc . " WHERE " . Constants::$KEYS_ASSOC_parent_key_id . "=$module_id)";
 	$res = $conn->query ( $sql );
 	
@@ -222,13 +228,13 @@ function getDesc($id)
 		die ( "Connection failed: " . $conn->connect_error );
 	}
 	
-	$sql = "SELECT " . Constants::$KEYS_ASSOC_child_key_id . "," . Constants::$KEYS_name . "," . Constants::$KEYS_ASSOC_desc . " FROM " . Constants::$TABLE_keys_assoc . " inner join " . Constants::$TABLE_keys . " on " . Constants::$KEYS_ASSOC_child_key_id . "=$id and " . Constants::$KEYS_id . "=$id";
+	$sql = "SELECT " . Constants::$KEYS_ASSOC_child_key_id . " as id," . Constants::$KEYS_name . "," . Constants::$KEYS_ASSOC_desc . " FROM " . Constants::$TABLE_keys_assoc . " inner join " . Constants::$TABLE_keys . " on (" . Constants::$KEYS_ASSOC_child_key_id . "=$id)and " . Constants::$KEYS_id . "=$id";
 	$res = $conn->query ( $sql );
 	//echo $sql;
 	$string = "{";
 	if ($res->num_rows > 0) {
 		if ($row = $res->fetch_assoc ()) {
-			$string .= "\"success\":true,\"name\":\"".$row['name']."\",\"desc\":\"".$row['desc']."\"";
+			$string .= "\"success\":true,\"name\":\"".$row['name']."\",\"desc\":\"".$row['desc']."\",\"id\":\"".$row['id']."\"";
 		}
 		/* while ( $row = $res->fetch_assoc () ) {
 			$string .= ",{\"id\":true,\"desc\":\"".$row['desc']."\"}";
@@ -267,7 +273,8 @@ function getChildrenListOf($parent_id, $child_id) {
 	return $string;
 }
 
-function saveKey($parent_id,$key_name)
+
+function saveKey($parent_id,$key_name,$data_type)
 {
 	
 /* 	$conn = new mysqli ( Constants::$servername, Constants::$username, Constants::$password, Constants::$dbname );
@@ -306,7 +313,8 @@ function saveKey($parent_id,$key_name)
 	
 	$conn->close (); */
 	$string = "{";
-	$child_id = insertKey($key_name);
+	$child_id = insertKey($key_name,$data_type);
+	
 	if($child_id != -1)
 	{
 		if(makeAssoc($parent_id, $child_id, 1, 0))
@@ -331,5 +339,68 @@ function makeAnEntry($row) {
 
 function makeAnEntry1($row) {
 	return "{\"id\":\"" . $row ['id'] . "\",\"name\":\"" . $row ['name'] . "\",\"desc\":\"" . $row ['desc'] . "\"}";
+}
+
+function dropKeys($key_array)
+{
+	$conn = new mysqli ( Constants::$servername, Constants::$username, Constants::$password, Constants::$dbname );
+	// Check connection
+	if ($conn->connect_error) {
+		die ( "Connection failed: " . $conn->connect_error );
+	}
+	mysqli_autocommit($conn,FALSE);
+	
+	$res = "{";
+	$sql = "DELETE FROM " . Constants::$TABLE_keys_assoc . " WHERE " . Constants::$KEYS_ASSOC_child_key_id . " in ($key_array) or " . Constants::$KEYS_ASSOC_parent_key_id . " in ($key_array)";
+	
+	if ($conn->query ( $sql ) === TRUE) {
+		} else {
+		$res .= "\"success\":false,\"success\":\"$sql = $conn->error\"";
+		$res .= "}";
+		return $res;
+		// 		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+
+	
+	
+	
+	$sql = "DELETE FROM " . Constants::$TABLE_keys . " WHERE " . Constants::$KEYS_id . " in ($key_array)";
+	if ($conn->query ( $sql ) === TRUE) {
+		$res .= "\"success\":true";
+		mysqli_commit($conn);
+	} else {
+		mysqli_rollback($conn);
+		$res .= "\"success\":false,\"success\":\"$sql = $conn->error\"";
+// 		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+	
+	$conn->close ();
+	$res .= "}";
+	return $res;
+}
+
+function addNode($parent,$jsonObject,$level)
+{
+	$keyList = array();
+	if(!is_array($jsonObject))
+		return;
+	$level++;
+	
+	foreach($jsonObject as $row => $val)
+	{
+		//echo $row;
+		if(!is_int($row))
+		{
+				
+			$child_id = insertKey($row);
+			if(is_array($val))
+				makeAssoc($parent, $child_id, 0, $level);
+			else
+				makeAssoc($parent, $child_id, 1, $level);
+				
+			addNode($child_id,$val,$level);
+		}
+			
+	}
 }
 ?>

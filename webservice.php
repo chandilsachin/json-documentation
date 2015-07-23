@@ -27,11 +27,19 @@ $server->register( "fetchDesc", array ('id' => 'xsd:integer'), array (
 		'return' => 'xsd:string'
 ),"urn:docOpeRequest" );
 
-$server->register( "addKey", array ('parent_id' => 'xsd:integer','key_name' => 'xsd:string'), array (
+$server->register( "addKey", array ('parent_id' => 'xsd:integer','key_name' => 'xsd:string','data_type' => 'xsd:string'), array (
 		'return' => 'xsd:string'
 ),"urn:docOpeRequest" );
 
 $server->register( "fetchKeyId", array ('key_name' => 'xsd:string'), array (
+		'return' => 'xsd:string'
+),"urn:docOpeRequest" );
+
+$server->register( "addObject", array ('parent_id' => 'xsd:integer','jsonObject' => 'xsd:string'), array (
+		'return' => 'xsd:string'
+),"urn:docOpeRequest" );
+
+$server->register( "deleteKeys", array ('keys' => 'xsd:string'), array (
 		'return' => 'xsd:string'
 ),"urn:docOpeRequest" );
 

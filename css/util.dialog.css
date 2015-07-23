@@ -1,0 +1,60 @@
+@CHARSET "ISO-8859-1";
+.util_sac_dialog_confirm
+{
+	position:absolute;
+	top:33%;
+	left:33%;
+	width:300px;
+	border-right:solid 1px orange;
+	border-left:solid 1px orange;
+	border-radius:10px;
+}
+
+.util_sac_dialog_confirm div:nth-child(1)
+{
+	
+	border-bottom:solid 1px orange;
+	padding: 5px;
+}
+
+.util_sac_dialog_confirm div:nth-child(2)
+{
+	min-height:50px;
+	
+	padding: 5px;
+}
+
+.util_sac_dialog_confirm div:nth-child(2) span
+{
+	
+}
+
+.util_sac_dialog_confirm div:nth-child(3)
+{
+	width:100%;
+	border-top:solid 1px orange;
+	padding-top: 5px;
+	padding: 5px;
+	
+	box-sizing:border-box;
+}
+
+.util_sac_dialog_confirm button
+{
+	width:50%;
+	padding:3px;
+	position:relative;
+	display: table-cell ;
+	border-radius:inherit;
+}
+
+.util_sac_dialog_confirm div button:nth-child(1)
+{
+	border-radius-bottom-left:15px;
+}
+
+.util_sac_dialog_confirm div button:nth-child(2)
+{
+	
+}
+
