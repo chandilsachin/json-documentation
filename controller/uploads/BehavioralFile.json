@@ -1,0 +1,4615 @@
+{
+	"appCommonStrings": 
+	{
+		"buildReleaseInfo": 
+		{
+			"versionNumber": "1.2.0",
+			"date": "22 April 2015"
+		},
+
+		"appName": "ESC Guidelines",
+		"appVersion": "4.0",
+		"Language": "DE",
+		"previousAppLanguage": "DE",
+		"logoimage": "client_icon",
+		"multiLanguageStartMsgTitle": "Langauge Setting",
+		"muliLangugaeStartMsgBody": "Unsere App hat Ihre Gerätesprache als Deutsch identifiziert. Die App ist auch in anderen Sprachen verfügbar. Sie können diese in den Einstellungen der App ändern.",
+		"multiLangagueStaratMsgChangeBtnTitle": "Jetzt ändern",
+		"bundleId": "com.springer.leitlinien1.",
+		"appStoreId": "516029597",
+		"iOSAppURL": "https://itunes.apple.com/de/app/dgvs-leitlinien-kodierleitfaden/id901808348?ls=1&mt=8",
+		"AndroidAppURL": "https://play.google.com/store/apps/details?id=com.bbi.deutschen_gesellschaft_verdauungs_stoffwechselkrankheiten",
+		"WindowsAppURL": "http://www.windowsphone.com/de-de/store/app/leitlinien/eae669b4-9689-44ec-8380-69476d879396",
+		"clientWebSite": "http://www.escardio.org/",
+		"feedbackToMailId": "feedback@media4u.com",
+		"feedbackCCMailId": "",
+		"feedbackBCCMailId": "",
+		"feedbackSubject": "Feedback",
+		"feedbackMainBody": "Zur Bearbeitung Ihres Feedbacks sind nachfolgende Angaben notwendig. Die App hat diese bereits erkannt und ausgefüllt (wenn Sie uns diese Informationen nicht übermitteln möchten, können Sie diese löschen). <br><br>Software-Version des Gerätes: %@<br>App-Version: %@<br>Gerätety %@",
+		"RecommendTitle": "Empfehlung",
+		"recommendSubject": "Empfehlung",
+		"RecommendMsgBody": "Hi, <br><br>I found a great App, the ESC Pocket Guidelines App, You can download it here.<br><a href=\"https://play.google.com/store/apps/details?id=com.esccardio.escpocketguidelines\">ESC Pocket Guidelines</a><br><b>iOS app:</b><br><a href=\"https://itunes.apple.com/us/app/esc-pocket-guidelines/id683079599?ls=1&mt=8\">ESC Pocket Guidelines</a>",
+		"VersionInformerFileName": "current_version.txt",
+		"historyTitle": "History",
+		"historyEmptyPopUpText": "No more history to display.",
+		"OkButtonTitle": "OK",
+		"NoButtonTitle": "No",
+		"YesButtonTitle": "Yes",
+		"LaterButtontitle": "Später",
+		"PleaseWaitMsg": "Please wait...",
+		"outSideLinkMsg": "You are about to leave the App. Would you like to continue?",
+		"internetConnErrorMsg": "Es kann keine Verbindung hergestellt werden. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.",
+		"EditButtonTitle": "Bearbeiten",
+		"resourceNotFoundTitle": "Warning",
+		"resourceNotFoundMsg": "Resource is not found or corrupt, please reinstall the App.",
+		"DoneButtonTitle": "Fertig",
+		"DeleteText": "Löschen",
+		"guideLineNotDownloadedMsg": "Leitlinie ist nicht heruntergeladen oder beschädigt ist, Sie es bitte erneut herunterladen.",
+		"sorryMsg": "Sorry !",
+		"AlertCellular": "App will Internet von Ihrem Mobilfunknetzwerk zugreifen, Daten Tarife können sich während dieser Aktion gelten, Wollen Sie es zulassen?",
+		"NointernetConnnection": "Keine Internetverbindung",
+		"NewGuideline": "Neue Richtlinie (n) zum Download zur Verfügung. Fahren Sie mit der Download?",
+		"lockedGuideline": "Diese Richtlinie ist gesperrt",
+		"NewLanguageDownloadFromServerMsg": "Solche Sprache Daten nicht verfügbar, würden Sie es herunterladen?",
+		"updationIsRunningMsg": "Inhalt Aktualisierung läuft versuchen Sie es nach einiger Zeit.",
+		"deletePackageMsg": "Language has been successfully changed, do you want to delete previous package data?",
+		"deleteOtherLanguageMsg": "Sprache wurde erfolgreich geändert, sind Sie zur vorherigen langauge Daten gelöscht werden?",
+		"cancelButtonText": "Cancel",
+		"deleteNoteTitle": "Warning",
+		"deletePackageTitle": "Warning",
+		"downloadButtonText": "Download",
+		"downloadPackageTitle": "Language Change",
+		"downloadPackageMsg": "Selected language is not on local storage, do you want to download it?",
+		"exitVideo": "Fertig",
+		"feedbackText1": "Zur Bearbeitung Ihres Feedbacks sind nachfolgende Angaben notwendig. Die App hat diese bereits erkannt und ausgef&#252;llt (wenn Sie uns diese Informationen nicht &#252;bermitteln m&#246;chten, k&#246;nnen Sie diese l&#246;schen).<br/><br/>&#45; Software-Version des Ger&#228;tes: <b>Android ",
+		"feedbackText2": "</b><br/>&#45; App-Version: <b>",
+		"feedbackText3": "</b><br/>&#45; Ger&#228;tetyp: <b>",
+		"sdCardNotAvailable": "SD card is not available.",
+		"sdCardIsFull": "SD card is full.",
+		"deleteNoteMsg": "Do you want to delete this note?",
+		"ConnectionTimeOut": "Internet is down, please try again later.",
+		"cellularNetworkMsg": "Device is not connected ot wifi.",
+		"homeAlertOutSideLinkMsg": "",
+		"homeAlertYesButtonTitle": "",
+		"homeAlertNoButtonTitle": "",
+		"calendarEventAddMessage": "Do you want to add this event on your device calendar events?",
+		"guidelineDownloadPermissionMsg": "Please download the guideline.\n Doyou want to download this guideline.",
+		"remainningGuidelineDownloadPermissionMsg": "Do you want to download remainning Guideline?"
+	},
+
+	"appCommonUI": 
+	{
+		"AppType": "1",
+		"backgroundColor": 
+		[
+			"#E6EDF3"
+		],
+
+		"subHeaderBarColor": 
+		[
+			"#136f76",
+			"#136f76"
+		],
+
+		"tocHeaderBarColor": 
+		[
+			"#0b6d93",
+			"#106586"
+		],
+
+		"ContentsTabTitle": "Content",
+		"ToolsTabTitle": "Tools",
+		"NewsTabTitle": "News",
+		"TabTitleSize": "15.00",
+		"TabTitleFont": "",
+		"setImageToTab": "false",
+		"TabSelectedImg": "tabSelected",
+		"TabSelectedColor": 
+		[
+			"#08a2a7",
+			"#08a2a7"
+		],
+
+		"TabSelectTextColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"TabDeselectedImg": "tabdeselected",
+		"TabDeselectedColor": 
+		[
+			"#2c858c",
+			"#2c858c"
+		],
+
+		"TabDeselectTextColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"overlayTab": "false",
+		"plusImgName": "plusImg",
+		"minusImgName": "minusImg",
+		"nextArrowImg": "next_arrow",
+		"preArrowImg": "pre_arrow",
+		"expandButtonImgName": "expand",
+		"collapseButtonImgName": "collapse",
+		"tabsAttributes": 
+		{
+			"simpleTab": 
+			{
+				"selected": 
+				{
+					"bgColor": 
+					[
+						"#760f30"
+					],
+
+					"textColor": 
+					[
+						"#f4eded"
+					],
+
+					"backgroundImg": "",
+					"radius": 
+					[
+						15,
+						15,
+						0,
+						0
+					]
+				},
+
+				"deSelected": 
+				{
+					"bgColor": 
+					[
+						"#f4eded"
+					],
+
+					"textColor": 
+					[
+						"#760f30"
+					],
+
+					"backgroundImg": "",
+					"radius": 
+					[
+						15,
+						15,
+						0,
+						0
+					]
+				}
+			},
+
+			"leftTab": 
+			{
+				"selected": 
+				{
+					"bgColor": 
+					[
+						"#760f30"
+					],
+
+					"textColor": 
+					[
+						"#f4eded"
+					],
+
+					"backgroundImg": "",
+					"radius": 
+					[
+						15,
+						15,
+						0,
+						0
+					]
+				},
+
+				"deSelected": 
+				{
+					"bgColor": 
+					[
+						"#f4eded"
+					],
+
+					"textColor": 
+					[
+						"#760f30"
+					],
+
+					"backgroundImg": "",
+					"radius": 
+					[
+						15,
+						15,
+						0,
+						0
+					]
+				}
+			},
+
+			"rightTab": 
+			{
+				"selected": 
+				{
+					"bgColor": 
+					[
+						"#AACC00"
+					],
+
+					"textColor": 
+					[
+						"#f4eded"
+					],
+
+					"backgroundImg": "",
+					"radius": 
+					[
+						15,
+						15,
+						0,
+						0
+					]
+				},
+
+				"deSelected": 
+				{
+					"bgColor": 
+					[
+						"#CCCCCC"
+					],
+
+					"textColor": 
+					[
+						"#760f30"
+					],
+
+					"backgroundImg": "",
+					"radius": 
+					[
+						15,
+						15,
+						0,
+						0
+					]
+				}
+			}
+		},
+
+		"NavigationBarComponents": 
+		{
+			"mainBar": 
+			{
+				"bgColor": 
+				[
+					"#136f76",
+					"#136f76"
+				],
+
+				"image": 
+				{
+					"name": "",
+					"width": "",
+					"height": ""
+				},
+
+				"strokeColor": 
+				[
+					"#FFFFFF"
+				]
+			},
+
+			"title": 
+			{
+				"textColor": 
+				[
+					"#ffffff"
+				],
+
+				"fontSize": 16,
+				"fontFamily": "Helvetica",
+				"fontWeightBold": "true"
+			},
+
+			"back": 
+			{
+				"image": 
+				{
+					"name": "back_btn_icon",
+					"width": 70,
+					"height": 35
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "100100",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": 25,
+						"extra": ""
+					}
+				}
+			},
+
+			"heute": 
+			{
+				"image": 
+				{
+					"name": "Heute-button",
+					"width": 70,
+					"height": 35
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "30",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": -1,
+						"extra": ""
+					}
+				}
+			},
+
+			"sponsor": 
+			{
+				"image": 
+				{
+					"name": "back_btn_icon",
+					"width": 70,
+					"height": 35
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "30",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": -1,
+						"extra": ""
+					}
+				}
+			},
+
+			"refresh": 
+			{
+				"image": 
+				{
+					"name": "refresh",
+					"width": 70,
+					"height": 35
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "30",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": -1,
+						"extra": ""
+					}
+				}
+			},
+
+			"noteSearch": 
+			{
+				"image": 
+				{
+					"name": "note_search",
+					"width": 70,
+					"height": 35
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "30",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": -1,
+						"extra": ""
+					}
+				}
+			},
+
+			"drug": 
+			{
+				"image": 
+				{
+					"name": "back_btn_icon",
+					"width": 70,
+					"height": 35
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "32",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": -1,
+						"extra": ""
+					}
+				}
+			},
+
+			"client": 
+			{
+				"image": 
+				{
+					"name": "client_icon",
+					"width": 50,
+					"height": 20
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "1004",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": 1006,
+						"extra": "http://www.escardio.org/"
+					}
+				}
+			},
+
+			"home": 
+			{
+				"image": 
+				{
+					"name": "home_btn_icon",
+					"width": 40,
+					"height": 40
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "1",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": 0,
+						"extra": ""
+					}
+				}
+			},
+
+			"fi": 
+			{
+				"image": 
+				{
+					"name": "fiButton",
+					"width": 40,
+					"height": 40
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "1",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": 0,
+						"extra": ""
+					}
+				}
+			},
+
+			"sticker": 
+			{
+				"bgColor": 
+				[
+					"#450756"
+				],
+
+				"image": 
+				{
+					"name": "",
+					"width": 12,
+					"height": 40
+				}
+			},
+
+			"expandCollapse": 
+			{
+				"image": 
+				{
+					"name": "expand",
+					"width": 40,
+					"height": 20
+				},
+
+				"onClick": 
+				{
+					"ios": 
+					{
+						"viewId": "1",
+						"extra": ""
+					},
+
+					"android": 
+					{
+						"id": -1,
+						"extra": ""
+					}
+				}
+			}
+		},
+
+		"appStartButtonImg": "start_btn",
+		"viewBackgroundImg": "",
+		"extraViewOnStart": 
+		{
+			"enable": true,
+			"device": "phone/tablet/both",
+			"target": 
+			{
+				"id": -1,
+				"extra": ""
+			}
+		}
+	},
+
+	"Disclaimer": 
+	{
+		"enable": false,
+		"repeat": false,
+		"dialog": 
+		{
+			"title": "Fachkreise & AGB",
+			"buttons": 
+			[
+				"Ich stimme zu"
+			],
+
+			"requiredImagesComeFromServer": "true",
+			"htmlPathFromDocDir": "%@/Data/%@/Disclaimer/%@/popup",
+			"bgColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"checkBox": 
+			{
+				"enable": true,
+				"text": "do not show again",
+				"bgColor": 
+				[
+					"#88C2FF"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"image": 
+				[
+					"book_empty0",
+					"book_filled0"
+				],
+
+				"fontSize": 17,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"warningMsg": 
+			{
+				"text": "You must agree terms and conditions to use app.",
+				"bgColor": 
+				[
+					"#FF0000"
+				],
+
+				"textColor": 
+				[
+					
+				],
+
+				"fontSize": 17,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			}
+		}
+	},
+
+	"DocCheckLogin": 
+	{
+		"enable": "false",
+		"id": "2000000004529",
+		"loginConfiramtionPopUp": 
+		{
+			"title": "Doc check login",
+			"message": "For accessing this languge content, first you must have logged in Doc Check",
+			"buttons": 
+			[
+				"Cancel",
+				"Go for Login"
+			]
+		},
+
+		"loginFailedPopUp": 
+		{
+			"title": "Doc check login",
+			"message": "failed!",
+			"buttons": 
+			[
+				"Try again",
+				"Go to Setting"
+			]
+		}
+	},
+
+	"bottomBar": 
+	{
+		"requiredImagesComeFromServer": "false",
+		"imagesPathFromDocDir": "%@/Data/%@/Images/bottomBar/%@",
+		"backgroundColor": 
+		[
+			"#B5B6B9",
+			"#e7e8e9",
+			"#f7f8f8",
+			"#95979a"
+		],
+
+		"bottomStrip": 
+		{
+			"enable": true,
+			"color": 
+			[
+				"#0096FF"
+			]
+		},
+
+		"iphoneTab": 
+		[
+			"icon_HomeViewController-->1",
+			"icon_TocViewController-->2",
+			"icon_historyBack-->100100",
+			"icon_historyForward-->200200",
+			"icon_search-->3",
+			"icon_NotesView-->4",
+			"icon_BookmarkViewController-->5",
+			"icon_InfoViewController-->6"
+		],
+
+		"ipad": 
+		{
+			"masterViewTab": 
+			[
+				"icon_HomeViewController-->1",
+				"icon_TocViewController-->2",
+				"icon_search-->3",
+				"icon_NotesView-->4",
+				"icon_BookmarkViewController-->5"
+			],
+
+			"detailViewTab": 
+			[
+				"icon_historyBack-->100100",
+				"icon_historyForward-->200200",
+				"BLANK_SPACE_BTN",
+				"icon_InfoViewController-->6",
+				"icon_UserGuideViewController-->15"
+			]
+		},
+
+		"allViewNames": 
+		[
+			"EmptyViewController",
+			"HomeViewController",
+			"TocViewController",
+			"Search",
+			"NotesView",
+			"BookmarkViewController",
+			"InfoViewController",
+			"bbworld_table",
+			"HowToUseView",
+			"HtmlLoadView",
+			"HtmlLoadView_ForTools",
+			"Imprint",
+			"DragNDropHome",
+			"CLViewController",
+			"SpecialViews",
+			"UserGuideViewController",
+			"GetMoreViewController",
+			"getMoreViewForTools",
+			"iCloudViewController",
+			"NewsTocViewController",
+			"SupportViewController",
+			"DetailViewController",
+			"Glossary",
+			"WhyToBecomeMemberInfo"
+		],
+
+		"ipadMasterViewPushNames": 
+		[
+			"Empty",
+			"HomeViewController",
+			"TocViewController",
+			"Search",
+			"NotesView",
+			"BookmarkViewController",
+			"InfoViewController",
+			"DragNDropHome",
+			"GetMoreViewController",
+			"getMoreViewForTools",
+			"NewsTocViewController",
+			"HowToUseView"
+		],
+
+		"tabBarProfileTablet": 
+		[
+			{
+				"id": "0",
+				"image": "tab_home"
+			},
+
+			{
+				"id": "1",
+				"image": "tab_toc"
+			},
+
+			{
+				"id": "2",
+				"image": "tab_search"
+			},
+
+			{
+				"id": "30",
+				"image": "tab_notes"
+			},
+
+			{
+				"id": "31",
+				"image": "tab_fav"
+			},
+
+			{
+				"id": "101",
+				"image": "tab_hback"
+			},
+
+			{
+				"id": "102",
+				"image": "tab_frwrd"
+			},
+
+			{
+				"id": "00000",
+				"image": "tab_info"
+			},
+
+			{
+				"id": "16",
+				"image": "tab_userguide"
+			},
+
+			{
+				"id": "10",
+				"image": "tab_setting"
+			},
+
+			{
+				"id": "6",
+				"image": "tab_info"
+			}
+		],
+
+		"tabBarProfile": 
+		[
+			{
+				"id": "0",
+				"image": "icon_HomeViewController"
+			},
+
+			{
+				"id": "1",
+				"image": "icon_TocViewController"
+			},
+
+			{
+				"id": "101",
+				"image": "icon_historyBack1"
+			},
+
+			{
+				"id": "102",
+				"image": "icon_historyForward1"
+			},
+
+			{
+				"id": "2",
+				"image": "icon_Search"
+			},
+
+			{
+				"id": "30",
+				"image": "icon_NotesView"
+			},
+
+			{
+				"id": "31",
+				"image": "icon_BookmarkViewController"
+			},
+
+			{
+				"id": "6",
+				"image": "icon_InfoViewController"
+			}
+		]
+	},
+
+	"Search": 
+	{
+		"title": "Suche",
+		"searchBarHintText": "Suche",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "Search"
+		},
+
+		"isSimpleTab": false,
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"type": 
+		{
+			"index": "false",
+			"globalText": "false",
+			"indexPlusGlobalText": "true"
+		},
+
+		"ClientIcon": 
+		{
+			"showLogoOnRightSideOfTopBar": "false",
+			"onclick": "27",
+			"target": "-1",
+			"extra": ""
+		},
+
+		"SearchListTextColor": 
+		[
+			"#000000"
+		],
+
+		"searchListBgColor": 
+		[
+			"#DCDCDC",
+			"#DCDCDC",
+			"#BEBEBE",
+			"#BEBEBE"
+		],
+
+		"searchButton": 
+		{
+			"text": "Suche",
+			"onPressColor": 
+			[
+				"#9B9B9B",
+				"#FAFAFB"
+			],
+
+			"bgColor": 
+			[
+				"#FAFAFB",
+				"#9B9B9B"
+			],
+
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				15,
+				15,
+				15,
+				15
+			]
+		},
+
+		"fullTextSearchButton": 
+		{
+			"text": "Global Text Search",
+			"googleLogTitle": "Full Text Search",
+			"onPressColor": 
+			[
+				"#08a2a7",
+				"#08a2a7"
+			],
+
+			"bgColor": 
+			[
+				"#2c858c",
+				"#2c858c"
+			],
+
+			"textColor": 
+			[
+				"#ffffff",
+				"#ffffff"
+			],
+
+			"fontFamily": "",
+			"fontSize": "15",
+			"radius": 
+			[
+				25,
+				25,
+				0,
+				0
+			]
+		},
+
+		"indexSearchButton": 
+		{
+			"text": "Index Search",
+			"googleLogTitle": "Index Search",
+			"onPressColor": 
+			[
+				"#08a2a7",
+				"#08a2a7"
+			],
+
+			"bgColor": 
+			[
+				"#2c858c",
+				"#2c858c"
+			],
+
+			"textColor": 
+			[
+				"#ffffff",
+				"#ffffff"
+			],
+
+			"fontFamily": "",
+			"fontSize": "15",
+			"radius": 
+			[
+				25,
+				25,
+				0,
+				0
+			]
+		},
+
+		"wordNotFoundMsg": "Word not found"
+	},
+
+	"TocViewController": 
+	{
+		"title": "Table of Contents",
+		"DisplayMainToolsTOC": "1",
+		"DisplayGuidelineToolsTOC": "1",
+		"ShowDefaultinTOC": "0",
+		"ShowDefaultContinueButton": "0",
+		"ShowDefaultScreenForSeconds": "2",
+		"TOCNavigationTitle": "Table of Contents",
+		"guidelineColorOnNavBar": false,
+		"CellHeight": "50",
+		"stickerOnSingleToc": false,
+		"tabOnSingleToc": "true",
+		"expandCollapse": true,
+		"isSimpleTab": true,
+		"enableToolAuthentication": false,
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				
+			],
+
+			"rightViews": 
+			[
+				"expandCollapse"
+			]
+		},
+
+		"sponsorImage": 
+		{
+			"enable": "false",
+			"listOfGLs": 
+			[
+				
+			],
+
+			"showAfterDefaultInSec": "1.0",
+			"hideDefaultAfterSponsorClick": "2.0",
+			"sponsorImageName": "sponsor",
+			"sponsorImgWithUpArrowImgName": "sponsor-up",
+			"sponsorImgWithDownArrowImgName": "sponsor-down",
+			"openCloseButtonSize": "20"
+		},
+
+		"sticker": 
+		{
+			"onGLTOC": "True",
+			"onGLTOCPosition": "right",
+			"onSingleTOC": "false",
+			"onSingleTOCPosition": "left"
+		},
+
+		"GLIconOnGLTOC": "true",
+		"tocListControllerType": "guideLineTocInfo/Inhouse/pharma",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "TOC"
+		},
+
+		"contentTab": 
+		{
+			"googleLogTitle": "Content"
+		},
+
+		"toolTab": 
+		{
+			"googleLogTitle": "Tool"
+		}
+	},
+
+	"NotesView": 
+	{
+		"title": "Notes",
+		"noteViewEmptyImgName": "empty_notes",
+		"requiredImagesComeFromServer": "false",
+		"imagesPathFromDocDir": "%@/Data/%@/Images/NotesView/%@",
+		"isSimpleTab": true,
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				
+			],
+
+			"rightViews": 
+			[
+				"edit"
+			]
+		},
+
+		"editBtnTextTile": "Edit",
+		"editBtnTextColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"editBtnTextSize": "12.00",
+		"editBtnBgColor": 
+		[
+			"#005C62"
+		],
+
+		"editBtnTextFontFamily": "",
+		"emptyNotesFirstBlock": "This is your notes overview. You haven't created any notes yet.",
+		"emptyNotesSecondBlock": "You can create notes from each content screen.",
+		"emptyNoteBgColor": 
+		[
+			"#00CDD2"
+		],
+
+		"giveNote": "",
+		"notesOkay": "OK",
+		"emptyNotesBookmarksTitleItem": "Hypertension",
+		"emptyNotesBookmarksItemColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"notesBookmarksDoneButton": "Done",
+		"notesBookmarksEditButton": "Edit",
+		"notesHeaderBgColor": "232#223#100",
+		"keyBordHideBtnImage": "hide_keyboard",
+		"deleteNoteButtonImage": "note_delete",
+		"saveNoteButtonImage": "note_save",
+		"notePadBgImage": "note_background",
+		"noteTextFontFamily": "",
+		"noteTextFontSize": "18.00",
+		"noteTextColor": 
+		[
+			"#FF0000"
+		],
+
+		"noteTextBgColor": 
+		[
+			"#AAAAAA",
+			"#ABABAB"
+		],
+
+		"empytNoteMsg": "Diese Notiz hat keinen Inhalt.",
+		"contentNotesPlistName": "Notesplist.plist",
+		"toolsNotesPlistName": "ToolsNotes.plist",
+		"noteSearch": 
+		{
+			"enable": false,
+			"bgColor": 
+			[
+				"#cecece"
+			],
+
+			"textHighlighColor": 
+			[
+				"#FF0000"
+			],
+
+			"searchBtnImageName": "note_search",
+			"searchBar": 
+			{
+				"bgColor": 
+				[
+					"#aeaeae"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				]
+			},
+
+			"cancelBtn": 
+			{
+				"text": "Cancel",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Arial",
+				"bgColor": 
+				[
+					"#dedede"
+				]
+			},
+
+			"emptyNoteSearchView": 
+			{
+				"text": "No notes available for your search",
+				"bgColor": 
+				[
+					"#FFAACC"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			}
+		},
+
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "Notes"
+		},
+
+		"contentTab": 
+		{
+			"googleLogTitle": "Content"
+		},
+
+		"toolTab": 
+		{
+			"googleLogTitle": "Tool"
+		},
+
+		"newsTab": 
+		{
+			"googleLogTitle": "News"
+		}
+	},
+
+	"BookmarkViewController": 
+	{
+		"title": "Bookmarks",
+		"bookmarkViewEmptyImgName": "emptyBookmarks",
+		"isSimpleTab": true,
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				
+			],
+
+			"rightViews": 
+			[
+				"edit"
+			]
+		},
+
+		"editBtnTextColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"editBtnTextSize": "12.00",
+		"editBtnBgColor": 
+		[
+			"#005C62"
+		],
+
+		"editBtnTextFontFamily": "",
+		"emptyBookmarksFirstBlock": "This is your bookmarks overview. You haven't created any bookmarks yet.",
+		"emptyBookmarksSecondBlock": "You can create bookmarks from each content screen.",
+		"emptyBookmarksBgColor": 
+		[
+			"#00CDD2"
+		],
+
+		"emptyNotesBookmarksTitleItem": "Hypertension",
+		"emptyNotesBookmarksItemColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"notesBookmarksDoneButton": "Done",
+		"notesBookmarksEditButton": "Edit",
+		"contentBookmarksPlistName": "plist.plist",
+		"toolsBookmarksPlistName": "ToolsBookmarks.plist",
+		"toolsBookmarksDictionaryKey": "ToolsBookmarks",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "Bookmark"
+		},
+
+		"contentTab": 
+		{
+			"googleLogTitle": "Content"
+		},
+
+		"toolTab": 
+		{
+			"googleLogTitle": "Tool"
+		},
+
+		"newsTab": 
+		{
+			"googleLogTitle": "News"
+		}
+	},
+
+	"LandingViewController": 
+	{
+		"PRODUCTION TEAM": "********************** PRODUCTION TEAM SECTION ********************** ",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "Guideline Landing Page"
+		},
+
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"client"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"logoIcon": 
+		{
+			"enable": "true",
+			"logoimage": "client_icon",
+			"logoWidth": "50",
+			"logoHeight": "30",
+			"onclick": "-1",
+			"target": "1006",
+			"extra": "http://www.escardio.org/"
+		},
+
+		"ClientIcon": 
+		{
+			"showLogoOnRightSideOfTopBar": "false",
+			"onclick": "27",
+			"target": "-1",
+			"extra": ""
+		},
+
+		"searchBar": 
+		{
+			"enable": "true"
+		}
+	},
+
+	"GetMoreViewController": 
+	{
+		"bgColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"gridBgColor": 
+		[
+			"#916512",
+			"#216567"
+		],
+
+		"title": "Download View",
+		"titleBar": 
+		{
+			"text": "Get more Guidelines",
+			"textColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"bgColor": 
+			[
+				"#777100",
+				"#662166"
+			],
+
+			"fontSize": "15",
+			"fontFamily": ""
+		},
+
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"downloadButton": 
+		{
+			"text": "Download",
+			"roundedCorners": "false",
+			"bgImage": "",
+			"bgDefaultColor": 
+			[
+				"#136f76",
+				"#136f76"
+			],
+
+			"bgPressedColor": 
+			[
+				"#1eadb8",
+				"#1eadb8"
+			],
+
+			"textColor": 
+			[
+				"#FFFFFF",
+				"#FFFFFF"
+			],
+
+			"disabledBgImage": "",
+			"fontFamily": "Arial",
+			"fontSize": "16",
+			"borderWidth": "0",
+			"borderColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"borderDashGap": "0"
+		},
+
+		"selectAllButton": 
+		{
+			"text": "Select All",
+			"deSelectText": "Deselect All",
+			"roundedCorners": "false",
+			"bgImage": "",
+			"bgDefaultColor": 
+			[
+				"#136f76",
+				"#136f76"
+			],
+
+			"bgPressedColor": 
+			[
+				"#1eadb8",
+				"#1eadb8"
+			],
+
+			"textColor": 
+			[
+				"#FFFFFF",
+				"#FFFFFF"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "16",
+			"borderWidth": "0",
+			"borderColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"borderDashGap": "0"
+		},
+
+		"deSelectAllBtnText": "Deselect All",
+		"gradientOrientation": "1",
+		"gradientType": "1",
+		"cornersRedious": 
+		[
+			"5"
+		],
+
+		"transparencyValue": "10",
+		"glSelectBtnImg": "check"
+	},
+
+	"HomeViewController": 
+	{
+		"HomeViewTitle": "ESC Pocket Guidelines ESC Pocket Guidelines ESC Pocket Guidelines",
+		"HomeTitleBarFontFamily": "",
+		"HomeTitleBarFontSize": "16.00",
+		"HomeTitleBarTextColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"HomeTitleBarBgColor": 
+		[
+			"#282728",
+			"#282728"
+		],
+
+		"HomeBgColor": 
+		[
+			"#dbe2e8",
+			"#eaf1f7"
+		],
+
+		"homeIconGridBgColor": 
+		[
+			"#CDDAE1",
+			"#CDDAE1"
+		],
+
+		"isShowFolder": "true",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"client"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"sponsorImage": 
+		{
+			"enable": "true",
+			"sponsorImageName": "sponsor",
+			"duration": 0,
+			"sponsorImgWithUpArrowImgName": "sponsor-up",
+			"sponsorImgWithDownArrowImgName": "sponsor-down",
+			"openCloseButtonSize": "50"
+		},
+
+		"moreGlButton": 
+		{
+			"enable": "true",
+			"text": "MoreGL",
+			"textColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"bgColor": 
+			{
+				"red": 0,
+				"green": 0,
+				"blue": 0,
+				"alpha": 0
+			},
+
+			"bgImage": "",
+			"fontFamily": "Arial",
+			"fontSize": "15",
+			"borderWidth": 0,
+			"bgDefaultColor": 
+			[
+				"#136f76",
+				"#136f76"
+			],
+
+			"bgPressedColor": 
+			[
+				"#914444",
+				"#216444"
+			],
+
+			"roundedCorners": "false",
+			"cornersRadious": 
+			[
+				0,
+				0,
+				0,
+				0,
+				0
+			],
+
+			"img": "plus_w",
+			"newGLNotificationCircle": 
+			{
+				"textColor": 
+				[
+					"#255255"
+				],
+
+				"bgColor": 
+				[
+					"#216567",
+					"#662166"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12",
+				"borderWidth": 1.5,
+				"borderColor": 
+				{
+					"red": 235,
+					"green": 235,
+					"blue": 235
+				}
+			},
+
+			"noMoreGlAvailablePopupMsg": "You have downloaded all guideline. No more guideline Available"
+		},
+
+		"guidelineLabelAndMoreGlButtonView": 
+		{
+			"enable": "true",
+			"text": "My ESC Guidelines",
+			"bgColor": 
+			[
+				"#136f76",
+				"#136f76"
+			],
+
+			"textColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "12"
+		},
+
+		"noGuidelinesDownloadedView": 
+		{
+			"enable": "true",
+			"bgColor": 
+			[
+				"#CED9DE"
+			],
+
+			"noGuidelinesDownloadedLabel": 
+			{
+				"enable": "true",
+				"text": "You have not downloaded any guidelines yet",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"bgColor": 
+				[
+					"#ffaaff"
+				],
+
+				"fontSize": 17,
+				"fontFamily": "Arial"
+			},
+
+			"downloadNewGuidelinesButton": 
+			{
+				"enable": "true",
+				"text": "Download\nESC Guidelines",
+				"textColor": 
+				[
+					"#ffffff"
+				],
+
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"fontSize": 17,
+				"fontFamily": "Arial",
+				"onClick": ""
+			},
+
+			"accessToolsButton": 
+			{
+				"enable": "true",
+				"text": "Access Tools",
+				"textColor": 
+				[
+					"#ffffff"
+				],
+
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"fontSize": 17,
+				"fontFamily": "Arial",
+				"onClick": ""
+			}
+		},
+
+		"myFavBookmarks": 
+		{
+			"enable": "false",
+			"bgColor": 
+			[
+				"#aaffff"
+			],
+
+			"myFavBookmarksButton": 
+			{
+				"enable": "true",
+				"text": "MY Fav Bookmarks",
+				"textColor": 
+				[
+					"#ffffff"
+				],
+
+				"backgroundImage": "my_fav_bookmark_button",
+				"bgColor": 
+				[
+					"#ffffaa"
+				],
+
+				"fontSize": 17,
+				"fontFamily": "Arial",
+				"onClick": ""
+			}
+		},
+
+		"logoIcon": 
+		{
+			"enable": "true",
+			"logoimage": "client_icon",
+			"logoWidth": "50",
+			"logoHeight": "30",
+			"onclick": "-1",
+			"target": "1006",
+			"extra": "http://www.escardio.org/"
+		},
+
+		"ExtraSplash": "0",
+		"NextButtonForExtraSplash": "0",
+		"ContentDownload_EN": "Compiling data, please wait..",
+		"ContentDownload_DE": "Ladevorgang, bitte warten Sie..",
+		"Pocket": 
+		{
+			"iphonePortBgImageName": "phone_port_home_bg",
+			"ipadPortBgImageName": "ipad_port_home_bg",
+			"ipadLandscapeBgImageName": "ipad_land_home_bg",
+			"Android_bgImage": "bgimg",
+			"numberOfRow": 7,
+			"numberOfRowFromBgImageShow": 7,
+			"android_row_height_pixel": 150,
+			"buttonsOnRows": 
+			[
+				[
+					{
+						"title": "Inhaltsverzeichnis",
+						"iconName": "TOC_home_white",
+						"bgColor": 
+						[
+							"#f90a2e"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"titleSize": 15,
+						"onClick": "TocViewController-->2",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "1",
+							"Extra": ""
+						}
+					}
+				],
+
+				[
+					{
+						"title": "Suche",
+						"iconName": "Search_black",
+						"bgColor": 
+						[
+							"#ffffff"
+						],
+
+						"titleColor": 
+						[
+							"#477b22"
+						],
+
+						"onClick": "Search-->3",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "2",
+							"Extra": ""
+						}
+					}
+				],
+
+				[
+					{
+						"title": "Celegene-Antiinfektiva",
+						"iconName": "",
+						"bgColor": 
+						[
+							"#477b22"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"onClick": "Imprint-->11",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "9",
+							"Extra": "0#3#0#DEIH243_9.0.0.0"
+						}
+					},
+
+					{
+						"title": "CT-Normalbefunde",
+						"iconName": "",
+						"bgColor": 
+						[
+							"#477b22"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"onClick": "iCloudViewController-->19",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "1",
+							"Extra": "0.2.7.1.0.0"
+						}
+					},
+
+					{
+						"title": "Abkürzungen",
+						"iconName": "",
+						"bgColor": 
+						[
+							"#477b22"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"onClick": "UserGuideViewController-->15",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "9",
+							"Extra": "0#3#0#DEIH243_8.3.0.0"
+						}
+					}
+				],
+
+				[
+					{
+						"title": "Impressum",
+						"iconName": "Imprint_black",
+						"bgColor": 
+						[
+							"#ffffff"
+						],
+
+						"titleColor": 
+						[
+							"#477b22"
+						],
+
+						"onClick": "Imprint-->11",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "19",
+							"Extra": ""
+						}
+					},
+
+					{
+						"title": "Einstellungen",
+						"iconName": "home_setting",
+						"bgColor": 
+						[
+							"#ffffff"
+						],
+
+						"titleColor": 
+						[
+							"#477b22"
+						],
+
+						"onClick": "iCloudViewController-->19",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "10",
+							"Extra": ""
+						}
+					},
+
+					{
+						"title": "Benutzung",
+						"iconName": "home_userGuide_black",
+						"bgColor": 
+						[
+							"#ffffff"
+						],
+
+						"titleColor": 
+						[
+							"#477b22"
+						],
+
+						"onClick": "UserGuideViewController-->15",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "16",
+							"Extra": ""
+						}
+					}
+				],
+
+				[
+					{
+						"title": "",
+						"iconName": "feedback_black",
+						"bgColor": 
+						[
+							"#f5da92"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"onClick": "TellAFrined-->1001",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "1000",
+							"Extra": ""
+						},
+
+						"numberOfColumns": 1.3
+					},
+
+					{
+						"title": "",
+						"iconName": "feedback_white",
+						"bgColor": 
+						[
+							"#f5da92"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"numberOfColumns": 1.3,
+						"onClick": "Rate-->1000",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "1001",
+							"Extra": ""
+						}
+					},
+
+					{
+						"title": "",
+						"iconName": "rate_white",
+						"bgColor": 
+						[
+							"#f5da92"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"onClick": "TellAFrined-->1001",
+						"onClick_Android": 
+						{
+							"id": "#View",
+							"view": "1002",
+							"Extra": ""
+						},
+
+						"numberOfColumns": 1.3
+					},
+
+					{
+						"title": "Zuletzt<br/> geoffnet",
+						"iconName": "LastView_white",
+						"bgColor": 
+						[
+							"#477b22"
+						],
+
+						"titleColor": 
+						[
+							"#ffffff"
+						],
+
+						"numberOfColumns": 2,
+						"onClick": "historyBack-->100100",
+						"onClick_Android": 
+						{
+							"id": "#LastView",
+							"view": "101",
+							"Extra": ""
+						}
+					}
+				]
+			]
+		}
+	},
+
+	"ServerDownloading": 
+	{
+		"enable": "true",
+		"title": "Data Download",
+		"appMode": "Test",
+		"showMessageAfterNoOfTime": "3",
+		"downloadingType": 
+		{
+			"withAlertForeground": "true",
+			"background": "false",
+			"withGetmoreSectionForeground": "false"
+		},
+
+		"alertForDownload": 
+		{
+			"message": "New guideline(s) available for download. Proceed with the download?",
+			"buttons": 
+			[
+				"Yes",
+				"No, Thanks"
+			]
+		},
+
+		"basePath": "https://s3-eu-west-1.amazonaws.com/bb.german.applications/2014/association/android/Test/",
+		"guideLineLockEnable": "true",
+		"showPopupsDuringManualOverride": "true",
+		"analyseSDCardMessage": "Platzberechnung auf der SD-Karte",
+		"serverBusyMessage": "Bitte später versuchen. Server ist aktuell beschäftigt…",
+		"serverConnectingStatusMessage": "Verbindung mit Download-Server",
+		"serverConnectingWaitingMessage": "Warten auf Verbindung mit Server",
+		"contentDataDownloadedMessage": "Downloading",
+		"dwngDoneSuccessfullyMsg": "Downloading done sucessfully",
+		"dwngNotDoneSuccessfullyMsg": "Due some reson downloading cacelled",
+		"dwngInprogressesMsg": "Already downloading is running",
+		"internetNotAvailableMsg": "Internet is not available, please try again",
+		"allDataDownloadedMsg": "All data downloaded perfectly",
+		"downloadingView": 
+		{
+			"bgColor": 
+			[
+				"#CED9DE"
+			],
+
+			"headerBar": 
+			{
+				"title": "Downloading",
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"fontSize": 20,
+				"fontFamily": "Helvetica",
+				"ClientIcon": 
+				{
+					"showLogoOnRightSideOfTopBar": "false",
+					"onclick": "27",
+					"target": "-1",
+					"extra": ""
+				}
+			},
+
+			"statusText": 
+			{
+				"title": "",
+				"bgColor": 
+				[
+					"#CED9DE"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12"
+			},
+
+			"downloadingContentText": 
+			{
+				"title": "",
+				"bgColor": 
+				[
+					"#00ff00"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12"
+			},
+
+			"downloadingProgressBar": 
+			{
+				"title": "",
+				"bgColor": 
+				[
+					"#00ff00"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"progressColor": 
+				[
+					"#FF0000"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12"
+			},
+
+			"dividerColor": 
+			[
+				"#000000"
+			],
+
+			"currentSize": 
+			{
+				"title": "Current Size",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12"
+			},
+
+			"totalSize": 
+			{
+				"title": "Total Size",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12"
+			},
+
+			"internetText": 
+			{
+				"title": "Internet",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12",
+				"fontWeightBold": true
+			},
+
+			"totalFileText": 
+			{
+				"title": "Total File",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontFamily": "Arial",
+				"fontSize": "12"
+			},
+
+			"pauseButtonImg": "",
+			"resumeButtonImg": "",
+			"bgImages": 
+			[
+				"downloadingBgImgForPod",
+				"downloadingBgImgForPhone",
+				"downloadingBgImgForPad"
+			],
+
+			"downloadingProcessbgImages": 
+			[
+				"popupBgImgForPod",
+				"popupBgImgForPhone",
+				"popupBgImgForPad"
+			],
+
+			"requiredImagesComeFromServer": "true",
+			"imagesPathFromDocDir": "%@/Data/%@/Image/ServerDownloading/%@"
+		},
+
+		"guidelineDownloadLogWebService": 
+		{
+			"enable": false,
+			"secretKey": "ea00b9ed-572a-4baa-bc70-1c1c2ad873d6",
+			"soapAction": "http://www.escardio.org/webservices/Esc_Services/GuidelineDownloadLogMaker",
+			"nameSpace": "http://www.escardio.org/webservices/Esc_Services",
+			"mathodName": "GuidelineDownloadLogMaker",
+			"weserviceUrlBBI": "http://www.systemriva.com/bbi/app/esc/android_action.php?",
+			"webServiceUrlClient": ""
+		}
+	},
+
+	"HtmlLoadView": 
+	{
+		"Interactive_title": "Interactive Tools",
+		"CLView_num": "-1",
+		"Algo_pdf": "algo_pdf",
+		"Algo_tool": "algo_tool",
+		"Email_button_img": "email01",
+		"Email_body": "<body style='background-color:none'><span style=' color:orange; font-family:arial; font-size:14pt; font-weight:bold; '>Attention:</span><br/><span style='color:black; font-family:arial; font-size:12pt; '>The document will be sent from your <i>default</i> e-mail address. <br/>If available, you can choose one of your alternate e-mail address by tapping <span style='color:orange'>Cc/Bcc, From</span> and then <span style='color:orange'>From</p></body>",
+		"Email_cancelButtonTitle": "Cancel",
+		"Email_continueButtonTitle": "Continue",
+		"Email_printButtonTitle": "Print",
+		"This_key_message_is_not_downloaded_yet": "This key message is not downloaded yet",
+		"Abbrevation_link": "abbr_",
+		"FlipView_link": "flipView",
+		"Guideline_link": "guideline_",
+		"Ref_link": "ref_",
+		"WWW_link": "www",
+		"Interactive_link": "interactive_",
+		"Link_not_valid": "This link is not available",
+		"Navigationbar_nextImg": "next_arrow",
+		"Navigationbar_previousImg": "pre_arrow",
+		"Bookmark_img": "book_empty",
+		"Bookmarked_img": "book_filled",
+		"Note_img": "note_empty",
+		"Noted_img": "note_filled",
+		"Home_button_img": "home_01-1",
+		"Is_home_button": "true",
+		"isStickerEnable": false,
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"Guideline_navigation": "false",
+		"Is_guideline_exist": "false",
+		"IndexList": 
+		{
+			"isIndexListRequired": "true",
+			"TocNumber": "1.2.1.0.0",
+			"red": 255,
+			"green": 0,
+			"blue": 0,
+			"indexWordColor": 
+			[
+				"#000000"
+			]
+		}
+	},
+
+	"InfoViewController": 
+	{
+		"title": "ESC View",
+		"requiredImagesComeFromServer": "false",
+		"imagesPathFromDocDir": "%@/Data/%@/Images/InfoScreen/%@",
+		"showTopBarForSearchButton": "false",
+		"showGetMoreButton": "false",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"subHeader": 
+		{
+			"enable": false,
+			"text": "ESC",
+			"bgColor": 
+			[
+				"#136f76"
+			],
+
+			"textColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"fontSize": 17,
+			"fontFamily": "Arial",
+			"fontWeightBold": "true"
+		},
+
+		"showThisICON": 
+		[
+			"iCloudViewController-->18",
+			"Imprint-->11",
+			"NewsTocViewController-->19",
+			"SupportViewController-->6",
+			"HowToUseView-->8",
+			"Rate-->1000",
+			"TellAFrined-->1001",
+			"Feedback-->1002",
+			"bbworld_table-->7",
+			"WhyToBecomeMemberInfo-->23",
+			"clientSite-->1004"
+		],
+
+		"infoViewBGImg": "bg",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "InfoView"
+		},
+
+		"infoViewProfile": 
+		[
+			{
+				"googleLogTitle": "NewsTocViewControllericon",
+				"id": "8",
+				"image": "NewsTocViewController"
+			},
+
+			{
+				"googleLogTitle": "ClientSiteicon",
+				"id": "1003",
+				"image": "ClientSite"
+			},
+
+			{
+				"googleLogTitle": "impressumicon",
+				"id": "19",
+				"image": "Rechtliches"
+			},
+
+			{
+				"googleLogTitle": "howtouseicon",
+				"id": "17",
+				"image": "HowToUseView"
+			},
+
+			{
+				"googleLogTitle": "settingicon",
+				"id": "10",
+				"image": "SettingView"
+			},
+
+			{
+				"googleLogTitle": "feedbackicon",
+				"id": "1000",
+				"image": "Feedback"
+			},
+
+			{
+				"googleLogTitle": "empfehlenicon",
+				"id": "1001",
+				"image": "TellAFriend"
+			},
+
+			{
+				"googleLogTitle": "rateicon",
+				"id": "1001",
+				"image": "Rate"
+			},
+
+			{
+				"googleLogTitle": "supporticon",
+				"id": "13",
+				"image": "SupportViewController"
+			},
+
+			{
+				"googleLogTitle": "associationicon",
+				"id": "20",
+				"image": "EHRA",
+				"extra": "1"
+			},
+
+			{
+				"googleLogTitle": "ACCAToolkiticon",
+				"id": "20",
+				"image": "ACCAToolkit",
+				"extra": "2"
+			},
+
+			{
+				"googleLogTitle": "Sponsorsicon",
+				"id": "27",
+				"image": "Sponsors",
+				"extra": "1"
+			},
+
+			{
+				"googleLogTitle": "ESCConferenceicon",
+				"id": "20",
+				"image": "ESCConference",
+				"extra": "3"
+			}
+		],
+
+		"jumpingAppDetails": 
+		[
+			{
+				"id": 1,
+				"packageName": "com.bbi.european_heart_rhythm_association_keymessages",
+				"launchFileName": "ESC_Main",
+				"launchingAppViewId": 0
+			},
+
+			{
+				"id": 2,
+				"packageName": "org.escardio.accatoolkit",
+				"launchFileName": "ESC_Main",
+				"launchingAppViewId": 0
+			},
+
+			{
+				"id": 3,
+				"packageName": "com.esccardio.escpocketguidelines",
+				"launchFileName": "ESC_Main",
+				"launchingAppViewId": 0
+			}
+		]
+	},
+
+	"ProductionViewController": 
+	{
+		"title": "Produktseite",
+		"PageTitleOnNavigationBar": "false",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"home"
+			],
+
+			"rightViews": 
+			[
+				"client"
+			]
+		},
+
+		"pageNavigation": false,
+		"imagesPathFromDocDir": "%@/Data/%@/Html/Extra/Products/%@",
+		"ProductionPages": 
+		[
+			{
+				"numtree": "1.0.0.0",
+				"id": "1",
+				"nametree": "Aktivitätsspektrum",
+				"htmlpage": "Production1",
+				"cellBgColor": 
+				[
+					"#FF0000"
+				],
+
+				"cellTextColor": 
+				[
+					"#EE1100"
+				],
+
+				"pageTopBarColor": 
+				[
+					"#000000"
+				]
+			}
+		],
+
+		"ClientIcon": 
+		{
+			"showLogoOnRightSideOfTopBar": "true",
+			"onclick": "-1",
+			"target": "-1",
+			"extra": ""
+		}
+	},
+
+	"SettingView": 
+	{
+		"title": "Settings",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"viewPrimaryColor": 
+		{
+			"enable": "true",
+			"heading": 
+			{
+				"bgColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				]
+			},
+
+			"subHeading": 
+			{
+				"bgColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				]
+			}
+		},
+
+		"subViewsList": 
+		[
+			"languageView",
+			"backupView",
+			"fontView",
+			"contentUpdateView",
+			"analyticsView"
+		],
+
+		"ClientIcon": 
+		{
+			"showLogoOnRightSideOfTopBar": "false",
+			"target": "-1",
+			"extra": "",
+			"onClick": ""
+		},
+
+		"restoreType": 
+		{
+			"simplyCopy": "true",
+			"notesPageNumber": "false",
+			"_nn_&_bb_": "false"
+		},
+
+		"languageView": 
+		{
+			"cellHeight": 146,
+			"mainViewBgColor": 
+			[
+				"#E1E9EF"
+			],
+
+			"heading": 
+			{
+				"text": "Verfügbare Sprachauswahl",
+				"bgColor": 
+				[
+					"#88C2FF"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 17,
+				"fontFamily": "Arial"
+			},
+
+			"lanagueButton": 
+			{
+				"text": "Select Language",
+				"bgColor": 
+				[
+					"#FFAACC"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			}
+		},
+
+		"backupView": 
+		{
+			"iCloudFileName": "ESC",
+			"oldBackupFolderName": "",
+			"oldBackupFileName": "",
+			"newBackupFileName": "database_nb_esc",
+			"isRequiredLookUpFile": "false",
+			"showRestoreConfirmPopup": "false",
+			"googleAnalyticsEvent": 
+			{
+				"enable": "true",
+				"viewName": "Backup View"
+			},
+
+			"restoreType": 
+			{
+				"simplyCopy": "true",
+				"notesPageNumber": "false",
+				"_nn_&_bb_": "false"
+			},
+
+			"cellHeight": 198,
+			"mainViewBgColor": 
+			[
+				"#E1E9EF"
+			],
+
+			"heading": 
+			{
+				"text": "Data Backup (SD Card)",
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"fontSize": 16,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"autoBackupView": 
+			{
+				"text": "Enable auto BackupView",
+				"bgColor": 
+				[
+					
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 14,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"autoBackupSwitch": 
+			{
+				"byDefaultOn": "true",
+				"googleLogTitle": "Auto Backup Switch",
+				"bgColor": 
+				[
+					
+				]
+			},
+
+			"lastBakcupText": 
+			{
+				"text": "Last Backup: ",
+				"bgColor": 
+				[
+					
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica",
+				"fontWeightBold": "true"
+			},
+
+			"manuallyBackupButton": 
+			{
+				"text": "Backup now",
+				"googleLogTitle": "Manual Backup Button",
+				"bgColor": 
+				[
+					"#136f76",
+					"#136f76",
+					"#1eadb8",
+					"#1eadb8"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica",
+				"radius": 
+				[
+					10
+				]
+			},
+
+			"backupInfoText": 
+			{
+				"text": "Without any data backup all your notes and bookmarks will get lost in case of an update or a reinstallation.",
+				"bgColor": 
+				[
+					
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"icloudNotEnableInDeviceMsg": "iCloudisnotactivatedindevice",
+			"ic_backupEnabled": "iCloud-backupistaktiviert.",
+			"ic_PleaseSelect": "BitteaktivierenSiedas",
+			"ic_backupInSysSettings": "iCloud-backupindenSystemeinstellungen.",
+			"ic_Connecting": "ConnectingToiCloud",
+			"ic_Connected": "ConnectedToiCloud",
+			"ic_ConnectionFailed": "ConnectionFailed",
+			"ic_DocOpenForReading": "iClouddocumentopenedforreading",
+			"ic_DocCreWriRedSuccess": "NewDocumentCreated,WrittenandReadSuccessfully",
+			"ic_RestoreConfirmation": "EssindNotizen/LesezeicheninIhreriCloudgespeichert.MöchtenSiediesewiederherstellen?",
+			"ic_CloudDataRestored": "iCloud-Datenwiederhergestellt",
+			"ic_EmptyPopup": "SiehabennochkeineNotizenoderLesezeichenerstellt.DaherkannnochkeinBackupDatenerfolgen.",
+			"ic_DocWritten": "NewDocumentcreated,WrittenandReadSuccessfully",
+			"ic_DocWrittenSuccess": "iClouddocumentWrittenSuccessfully",
+			"ic_BackupSuccessful": "Datensicherungerfolgreichabgeschlossen.",
+			"ic_BackUpFail": "Backupfehlgeschlagen!",
+			"ic_Failed": "Fehlgeschlagen!",
+			"ic_TryLater": "BitteversuchenSieesspäternocheinmal.",
+			"ic_NewDocWrittenSucc": "NeuesDokumentgeöffnetunderfolgreichgeschrieben"
+		},
+
+		"fachInfoView": 
+		{
+			"cellHeight": 75
+		},
+
+		"fontView": 
+		{
+			"cellHeight": 115,
+			"googleAnalyticsEvent": 
+			{
+				"enable": "true",
+				"viewName": "Font feature"
+			},
+
+			"mainViewBgColor": 
+			[
+				"#E1E9EF"
+			],
+
+			"selectedButtonProperites": 
+			{
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				]
+			},
+
+			"deSelectedButtonProperites": 
+			{
+				"bgColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				]
+			},
+
+			"heading": 
+			{
+				"text": "Select Font Size",
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"fontSize": 16,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"smallButton": 
+			{
+				"text": "Small",
+				"googleLogTitle": "Small font",
+				"fontSize": 12,
+				"fontFamily": "Helvetica",
+				"logText": "small font selected"
+			},
+
+			"mediumButton": 
+			{
+				"text": "Medium",
+				"googleLogTitle": "Medium font",
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"largeButton": 
+			{
+				"text": "Large",
+				"googleLogTitle": "Large font",
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			}
+		},
+
+		"analyticsView": 
+		{
+			"cellHeight": 321,
+			"googleAnalyticsEvent": 
+			{
+				"enable": "true",
+				"viewName": "Google Anlytics"
+			},
+
+			"GAItrackingId": "UA-52312160-2",
+			"enableGADescription": "true",
+			"mainViewBgColor": 
+			[
+				"#E1E9EF"
+			],
+
+			"heading": 
+			{
+				"text": "Google Analytics",
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"fontSize": 16,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"activeView": 
+			{
+				"text": "disable",
+				"bgColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 14,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"activationSwitch": 
+			{
+				"byDefaultOn": "true",
+				"googleLogTitle": "Google Analytics Switch",
+				"bgColor": 
+				[
+					
+				]
+			},
+
+			"analyticsInfoText": 
+			{
+				"text": "<html><head><meta http-equiv=\"Content-type\" content=\"text/html charset=UTF-8\" /><meta name=\"viewport\" content=\"width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;\"/></head><body style=\"font-size:13px;font-family:Arial;-webkit-user-select:none;\">You can object to the acquisition of app data related to your use of the app through the Google Analytics tracking app. Simply activate the switch \"Google Analytics disable \". Google Analytics tracking app will henceforth be prevented in this app. For more information about Google Analytics tracking app in the app can be found in our <a href=\"Imprint_Information\">data policy.</a></body></html>",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 14,
+				"fontFamily": "Helvetica"
+			},
+
+			"viewsDisplayName": 
+			[
+				"EmptyViewController",
+				"Home",
+				"TOC",
+				"Search",
+				"Notes",
+				"Bookmarks",
+				"Information",
+				"BBApps",
+				"How To Use",
+				"Content",
+				"Interactive",
+				"Imprint",
+				"DragNDropHome1",
+				"ClassicViewController",
+				"SpecialViews",
+				"How to use tutorial",
+				"More Guidelines",
+				"Guideline Landing Page",
+				"Settings",
+				"News Tool",
+				"Support",
+				"News Tool",
+				"GlossaryPage",
+				"MemberPage",
+				"Home",
+				"ImprintPageView",
+				"Login",
+				"Calendar",
+				"ProductionPage",
+				"PdfPage",
+				"SponsorView",
+				"VideoTutorialsView",
+				"DrugView",
+				"Legal information",
+				"How to use video",
+				"Subject Area popup"
+			]
+		},
+
+		"contentUpdateView": 
+		{
+			"cellHeight": 138,
+			"googleAnalyticsEvent": 
+			{
+				"enable": "true",
+				"viewName": "Font feature"
+			},
+
+			"mainViewBgColor": 
+			[
+				"#E1E9EF"
+			],
+
+			"heading": 
+			{
+				"text": "Content Updates",
+				"bgColor": 
+				[
+					"#136f76"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"fontSize": 16,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"autoUpdateView": 
+			{
+				"text": "Update automatically",
+				"bgColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 14,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"autoUpdateSwitch": 
+			{
+				"byDefaultOn": "false",
+				"googleLogTitle": "Auto Update Switch",
+				"bgColor": 
+				[
+					
+				]
+			},
+
+			"networkSelectionView": 
+			{
+				"text": "Download on cellular network?",
+				"bgColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 14,
+				"fontFamily": "Arial",
+				"fontWeightBold": "true"
+			},
+
+			"networkSelectionSwitch": 
+			{
+				"byDefaultOn": "false",
+				"googleLogTitle": "Network Selection Switch",
+				"bgColor": 
+				[
+					
+				]
+			},
+
+			"lastContentText": 
+			{
+				"text": "Last update: ",
+				"bgColor": 
+				[
+					
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 14,
+				"fontWeightBold": "true",
+				"fontFamily": "Helvetica"
+			},
+
+			"manuallyUpdateButton": 
+			{
+				"enable": "true",
+				"text": "Update now",
+				"googleLogTitle": "Manual Backup Button",
+				"bgColor": 
+				[
+					"#136f76",
+					"#136f76",
+					"#1eadb8",
+					"#1eadb8"
+				],
+
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"updateInfoText": 
+			{
+				"text": "download data from server",
+				"bgColor": 
+				[
+					
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			}
+		}
+	},
+
+	"googleExpansion": 
+	{
+		"isExpansionEnable": "false",
+		"downloadPauseHeaderText": "Downloading Pause",
+		"downloadResumeHeaderText": "Downloading in progress",
+		"downloadPauseButtonText": "Pause Download",
+		"downloadResumeButtonText": "Resume Download",
+		"downloadTimeRemainingText": "Time Remaining"
+	},
+
+	"LoginViewController": 
+	{
+		"title": "My ESC Login",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"home"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"loginView": 
+		{
+			"enable": "false",
+			"enableTitleBar": "true",
+			"loginSubHeaderBar": 
+			{
+				"enable": "false",
+				"text": "My ESC Login",
+				"textColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"bgColor": 
+				[
+					"#248185",
+					"#459598"
+				],
+
+				"fontSize": "18",
+				"fontFamily": "Arial"
+			},
+
+			"loginButton": 
+			{
+				"text": "Sign in",
+				"bgColor": 
+				[
+					"#F7F7F7",
+					"#A4A4A4"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"rememberMe": 
+			{
+				"enable": true,
+				"text": "RememberMe",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"passwordRule": 
+			{
+				"enable": false,
+				"text": "Passwort-(erste3Stellen-kleingeschrieben-IhresNachnamens)",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"forgotPassword": 
+			{
+				"enable": true,
+				"text": "<u>ForgotPassword?</u>",
+				"url": "http://www.google.com",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"userNameAndPasswordLabel": 
+			{
+				"enable": true,
+				"username": "Email",
+				"password": "Password",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 16,
+				"fontFamily": "Helvetica"
+			},
+
+			"userNameAndPasswordHint": 
+			{
+				"enable": true,
+				"userNameHint": "Email",
+				"passwordHint": "Password"
+			},
+
+			"signUp": 
+			{
+				"enable": true,
+				"text": "<u>Free sign up?</u>",
+				"url": "http://www.google.com",
+				"lblDontHaveAnAccountText": "Don't Have An Account?",
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 12,
+				"fontFamily": "Helvetica"
+			},
+
+			"txtBlankAlertTitle": "Datennichtkorrekt.",
+			"txtBlankMessage": "BitteprufenSieIhreEingabezuMitgliedsnummerundPasswort.BeachtenSiedabeiGrob-undKleinschreibung.",
+			"cancelButtonTitle": "OK"
+		},
+
+		"Webservice": 
+		{
+			"webServiceType": 
+			{
+				"normalWebService": "true",
+				"innerXMLWebService": "false"
+			},
+
+			"webServiceSecretKey": "ea00b9ed-572a-4baa-bc70-1c1c2ad873d6",
+			"loginWebServiceURL": "https://partners.escardio.org/Bruckmeier/esc_services.asmx",
+			"loginWebServiceSoapAction": "http://www.escardio.org/webservices/Esc_Services/AuthenticateUser",
+			"xmlDocStringIn": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Root xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><RequestType>BBIPARAMETER1</RequestType><MemberNo>BBIUSERIDTEXT</MemberNo><Password>BBIPASSWORDTEXT</Password></Root>",
+			"postString": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"><SOAP-ENV:Body><UnitopWebServiceMessage xmlns=\"http://tempuri.org/\"><xmlDocStringIn>BBXMLDOCSTRINGIN</xmlDocStringIn><xmlDocStringOut>BBXMLDOCSTRINGOUT</xmlDocStringOut></UnitopWebServiceMessage></SOAP-ENV:Body></SOAP-ENV:Envelope>",
+			"contentType": "text/xml; charset=utf-8",
+			"BBIPARAMETER1": "Login",
+			"BBIPARAMETER2": "",
+			"BBIPARAMETER3": "",
+			"BBIPARAMETER4": "",
+			"BBIPARAMETER5": "",
+			"BBIUSERIDTEXT": "",
+			"BBIPASSWORDTEXT": "",
+			"BBISECRETKEYTEXT": "",
+			"BBXMLDOCSTRINGIN": "",
+			"BBXMLDOCSTRINGOUT": "",
+			"loginLogWebserviceUrl": "http://www.systemriva.com/bbi/app/dgim/dgim_android_login_%s.php",
+			"demoLoginLogWebserviceUrl": "http://www.systemriva.com/bbi/app/dgim_demo/dgim_android_login_%s.php",
+			"guidelineLogWebserviceUrl": "http://www.systemriva.com/bbi/app/dgim/dgim_android_%s.php",
+			"freeGuidelineLogWebserviceUrl": "http://www.systemriva.com/bbi/app/dgim/dgim_android_%s.php",
+			"namespace": "http://www.escardio.org/webservices/Esc_Services",
+			"authenticateMethodName": "AuthenticateUser",
+			"xmlStringInput": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Root xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><RequestType>Login</RequestType><MemberNo>%1$s</MemberNo><Password>%2$s</Password></Root>",
+			"xmlStringOutput": ""
+		},
+
+		"loginSuccess": "Login Success!",
+		"loginFailed": "Login Failed!",
+		"notConnectedtoInternet": "Not Connected to Internet",
+		"errorContactingServer": "Error Contacting Server"
+	},
+
+	"Imprint": 
+	{
+		"title": "Impressum",
+		"type": 
+		{
+			"singlePage": "true",
+			"expandable": "false",
+			"multiPages": "false"
+		},
+
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"color": "true",
+		"cellBackgroundColor": 
+		{
+			"color_0": 
+			[
+				"#000000"
+			],
+
+			"color_1": 
+			[
+				"#000000"
+			]
+		},
+
+		"cellImage": "imp_middle_ipod",
+		"multiPageTOCTree": 
+		[
+			{
+				"numtree": "1.0.0.0",
+				"id": "5",
+				"nametree": "Sponsor",
+				"htmlpage": "Impressum-1",
+				"cellBgColor": 
+				[
+					"#f8f8f8",
+					"#c8c8c8"
+				],
+
+				"cellTextColor": 
+				[
+					"#FFFFFF"
+				],
+
+				"pageTopBarColor": 
+				[
+					"#136f76"
+				],
+
+				"target": 
+				{
+					"id": 27,
+					"extra": "1.0.0.0"
+				}
+			}
+		]
+	},
+
+	"Glossary": 
+	{
+		"title": "Leitlinien Glossar",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"home"
+			],
+
+			"rightViews": 
+			[
+				"client"
+			]
+		}
+	},
+
+	"WhyToBecomeMemberInfo": 
+	{
+		"title": "Member page",
+		"requiredImagesComeFromServer": "true",
+		"htmlPathFromDocDir": "%@/Data/%@/Html/Extra/%@",
+		"htmlPageName": "WhyToBecomeMemberInfoq",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"home"
+			],
+
+			"rightViews": 
+			[
+				"client"
+			]
+		}
+	},
+
+	"SupportViewController": 
+	{
+		"title": "Support",
+		"requiredImagesComeFromServer": "true",
+		"htmlPathFromDocDir": "%@/Data/%@/Html/Extra/%@",
+		"htmlPageName": "Support",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"ClientIcon": 
+		{
+			"showLogoOnRightSideOfTopBar": "false",
+			"onclick": "27",
+			"target": "-1",
+			"extra": ""
+		}
+	},
+
+	"HowToUseView": 
+	{
+		"title": "How to use",
+		"videoComingSoonMSG": "Comming Soon!",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"howToUseProfile": 
+		[
+			{
+				"id": "201",
+				"image": "Video"
+			},
+
+			{
+				"id": "203",
+				"image": "Tutorial"
+			}
+		]
+	},
+
+	"bbworldView": 
+	{
+		"title": "BBapps im App Store",
+		"subTitle": "Weitere BBapps im App Store",
+		"requiredImagesComeFromServer": "true",
+		"imagesPathFromDocDir": "%@/Data/%@/Image/bbworldView/%@",
+		"url": "http://www.doc2do.com/bbitools_plist/",
+		"subTitleBgColor": 
+		[
+			"#000000",
+			"#aeaeae"
+		],
+
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"home"
+			],
+
+			"rightViews": 
+			[
+				"client"
+			]
+		},
+
+		"region": "DE",
+		"plusImg": "BBToolsPlus",
+		"minusImg": "BBToolsMinus",
+		"comingSoonPopup": "Demnächst verfügbar",
+		"bbiThisProduct": "This product will be available soon"
+	},
+
+	"UserGuideViewController": 
+	{
+		"title": "Benutzung",
+		"requiredImagesComeFromServer": "true",
+		"imagesPathFromDocDir": "%@/Data/%@/Image/UserGuide/%@",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"UserGuideType": 
+		{
+			"SingleImageUserGuide": "true"
+		},
+
+		"SingleImageUserGuide": 
+		{
+			"image": "User_Guide"
+		},
+
+		"MultiImageUserGuide": 
+		{
+			"images": 
+			[
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14"
+			]
+		}
+	},
+
+	"NewsTocViewController": 
+	{
+		"enable": true,
+		"SoapActionGetNewsStatus": "http://www.doc2do.com/news_tool/EHRA_News/EHRA_news_change",
+		"Namespace": "http://www.doc2do.com/news_tool/EHRA_News/",
+		"GetNewsMethodName": "EHRA_news_change",
+		"WebserviceUrl": "http://www.doc2do.com/news_tool/EHRA_News/EHRA_news_change/EHRA_news_change.php",
+		"NewsToolServerJsonUrl": "http://www.doc2do.com/news_tool/DDG_NEWS/xml/DDG.json",
+		"NewsToolServerXmlUrl": "http://www.doc2do.com/news_tool/DZR/test.xml",
+		"title": "ESC News",
+		"titleBarFontFamily": "",
+		"titleBarFontSize": "18.00",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"titleBarTextColor": 
+		[
+			"#000000"
+		],
+
+		"titleBarBgColor": 
+		[
+			"#D4D4D4",
+			"#BDBDBD"
+		],
+
+		"nbBgColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"nbTextColor": 
+		[
+			"#000000"
+		],
+
+		"showNewsCount": "true",
+		"soapAction": "true",
+		"xmlFile": "false",
+		"jsonFile": "true",
+		"subTitle": "News OverView",
+		"subTitleBgColor": 
+		[
+			"#71B7E9",
+			"#4D94C7"
+		],
+
+		"subTitleFontFamily": "",
+		"subTitleFontSize": "16.00",
+		"subTitleFontColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"subTitleFontStyle": "normal",
+		"tocListBgColor": 
+		[
+			"#E7E7E7"
+		],
+
+		"tocListItemDateFontFamily": "",
+		"tocListItemDateFontSize": "14.00",
+		"tocListItemDateFontColor": 
+		[
+			"#C5C5C5"
+		],
+
+		"tocListItemDateFontStyle": "normal",
+		"tocListItemTitleFontFamily": "",
+		"tocListItemTitleFontSize": "14.00",
+		"tocListItemTitleFontColor": 
+		[
+			"#060606"
+		],
+
+		"tocListItemTitleFontStyle": "bold",
+		"newsNextArrowImg": "news_next_arrow",
+		"newsNewImage": "new_news",
+		"loadMoreNewTitle": "Load more news",
+		"loadMoreNewBgColor": 
+		[
+			"#4D94C7"
+		],
+
+		"loadMoreFontFamily": "",
+		"loadMoreFontSize": "16.00",
+		"loadMoreFontColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"loadMoreFontStyle": "normal",
+		"encryptedData": false
+	},
+
+	"DetailNewsViewController": 
+	{
+		"title": "ModularNews",
+		"showDateAndDeleteButtonBar": "true",
+		"showNewsNotesAndBookMarks": "true",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"titleBarFontFamily": "",
+		"titleBarFontSize": "18.00",
+		"titleBarTextColor": 
+		[
+			"#000000"
+		],
+
+		"titleBarBgColor": 
+		[
+			"#D4D4D4",
+			"#BDBDBD"
+		],
+
+		"showNewsCount": "true",
+		"level0_BgColor": 
+		[
+			"#A2CBE7",
+			"#A2CBE7"
+		],
+
+		"level0_FontStyle": "normal",
+		"level0_FontFamily": "",
+		"level0_FontSize": "14.00",
+		"level0_FontColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"level1_BgColor": 
+		[
+			"#A2CBE7",
+			"#809FB7"
+		],
+
+		"level1_FontStyle": "normal",
+		"level1_FontFamily": "",
+		"level1_FontSize": "14.00",
+		"level1_FontColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"navigationbarNextImg": "news_next",
+		"navigationbarPreviousImg": "news_prev",
+		"bookmarks": "false",
+		"bookmarkImg": "book_empty1",
+		"bookmarkedImg": "book_filled1",
+		"notes": "false",
+		"noteImg": "note_empty1",
+		"notedImg": "note_filled1",
+		"newsDelete": "true",
+		"newsDeleteImage": "news_delete",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "NewsTool"
+		},
+
+		"googleLogTitle": "NewsContent"
+	},
+
+	"CalendarViewController": 
+	{
+		"CalendarToolCareTakerWebservice": "http: //www.bbinfotech.com/news_tool/dgim_calendar/Services/news_status.php?counter=",
+		"CalendarToolServerJsonUrl": "http: //www.bbinfotech.com/news_tool/dgim_calendar/Services/XML/dgim.json",
+		"title": "DGIMKalendar",
+		"titleBarFontFamily": "",
+		"titleBarFontSize": "18.00",
+		"titleBarTextColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"titleBarBgColor": 
+		[
+			"#07466F",
+			"#07466F"
+		],
+
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"back"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"tocListBgColor": 
+		[
+			"#E7E7E7"
+		],
+
+		"eventMonthYearFontFamily": "",
+		"eventMonthYearFontSize": "14.00",
+		"eventMonthYearBarBgColor": 
+		[
+			"#00AEEF"
+		],
+
+		"eventMonthYearFontColor": 
+		[
+			"#FFFFFF"
+		],
+
+		"eventMonthYearFontStyle": "bold",
+		"endMonthFontFamily": "",
+		"endMonthFontSize": "14.00",
+		"endMonthFontColor": 
+		[
+			"#00AEEF"
+		],
+
+		"endMonthFontStyle": "bold",
+		"startDateFontFamily": "",
+		"startDateFontSize": "18.00",
+		"startDateFontColor": 
+		[
+			"#00AEEF"
+		],
+
+		"startDateFontStyle": "bold",
+		"endDateFontFamily": "",
+		"endDateFontSize": "18.00",
+		"endDateFontColor": 
+		[
+			"#00AEEF"
+		],
+
+		"endDateFontStyle": "bold",
+		"startTimeFontFamily": "",
+		"startTimeFontSize": "13.00",
+		"startTimeFontColor": 
+		[
+			"#3E3D40"
+		],
+
+		"startTimeFontStyle": "normal",
+		"endTimeFontFamily": "",
+		"endTimeFontSize": "13.00",
+		"endTimeFontColor": 
+		[
+			"#3E3D40"
+		],
+
+		"endTimeFontStyle": "normal",
+		"eventTitleFontFamily": "",
+		"eventTitleFontSize": "14.00",
+		"eventTitleFontColor": 
+		[
+			"#58585A"
+		],
+
+		"eventTitleFontStyle": "bold",
+		"eventContentFontFamily": "",
+		"eventContentFontSize": "14.00",
+		"eventContentFontColor": 
+		[
+			"#808080"
+		],
+
+		"eventContentFontStyle": "normal",
+		"eventPlaceFontFamily": "",
+		"eventPlaceFontSize": "14.00",
+		"eventPlaceFontColor": 
+		[
+			"#A1A1A4"
+		],
+
+		"eventPlaceFontStyle": "italic",
+		"monthName": 
+		[
+			"Januar",
+			"Februar",
+			"M&#228;rz",
+			"April",
+			"Mai",
+			"Juni",
+			"Juli",
+			"August",
+			"September",
+			"Oktober",
+			"November",
+			"Dezember"
+		],
+
+		"calendarEventMaker": 
+		{
+			"enable": true,
+			"imageName": "calendar"
+		}
+	},
+
+	"crossAppView": 
+	{
+		"alertForDownload": 
+		{
+			"message": "New guideline(s) available for download. Proceed with the download?",
+			"buttons": 
+			[
+				"Yes",
+				"No, Thanks"
+			]
+		},
+
+		"packageName": "com.esccardio.escpocketguidelines",
+		"launchFileName": "ESC_Main",
+		"noInternetConnectionMessage": "you don't have internet connection\n please connect to internet"
+	},
+
+	"PushNotification": 
+	{
+		"enable": "true",
+		"iOSWebPagePath": "http://bbinfotech.com/news_tool/dgim_calendar/Services/reg_token_key.php?key=",
+		"gcmSenderId": "268957898287",
+		"registrationWebservice": "http://www.bbinfotech.com/news_tool/DGVS/Noti/Notification/Android/register.php",
+		"actionServiceIdentifier": "",
+		"confirmationDialog": 
+		{
+			"message": "Möchten Sie Push-Benchrichtigungen der App erlauben?",
+			"buttons": 
+			[
+				"Ja",
+				"Nicht erlauben"
+			]
+		},
+
+		"registrationFailedDialog": 
+		{
+			"message": "Registration failed",
+			"buttons": 
+			[
+				"Ok"
+			]
+		}
+	},
+
+	"SocialMediaPopupView": 
+	{
+		"numberOfRows": 1,
+		"position": "top",
+		"bgColor": 
+		[
+			"#cecece"
+		],
+
+		"direction": "rtl",
+		"isRoundedCorner": true,
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "Social Media"
+		},
+
+		"Row_1": 
+		[
+			{
+				"googleLogTitle": "Facebook Button",
+				"image": "facebook_popup",
+				"id": 1006,
+				"Extra": "https://www.facebook.com"
+			},
+
+			{
+				"googleLogTitle": "Twitter Button",
+				"image": "twitter_popup",
+				"id": 1006,
+				"Extra": "https://www.twitter.com"
+			},
+
+			{
+				"googleLogTitle": "Youtube Button",
+				"image": "youtube_popup",
+				"id": 1006,
+				"Extra": "http://www.youtube.com"
+			},
+
+			{
+				"googleLogTitle": "Feedback Button",
+				"image": "feedback_popup",
+				"id": 1000
+			},
+
+			{
+				"googleLogTitle": "Recommend Button",
+				"image": "recommend_popup",
+				"id": 1001
+			},
+
+			{
+				"googleLogTitle": "Rate Button",
+				"image": "rate_popup",
+				"id": 1002
+			}
+		]
+	},
+
+	"appUpadateStatus": 
+	{
+		"enable": "false",
+		"filePath": "https://s3-eu-west-1.amazonaws.com/bbi.appsdata.2013/Modular+Apps/GLMoreTest/DGK/update/app_update_status.json",
+		"alertMessage": "App update Available. Do you want to update your App?",
+		"appUpdateCheckTimeAfter": 
+		{
+			"days": "0",
+			"hours": "2"
+		}
+	},
+
+	"SubjectAreaPopupView": 
+	{
+		"enable": false,
+		"bgColor": 
+		[
+			"#fefefe"
+		],
+
+		"autoLaunchTimeInterval": 
+		{
+			"enable": false,
+			"timeInterval": 
+			{
+				"days": 0,
+				"hours": 0,
+				"minuts": 0,
+				"seconds": 15
+			}
+		},
+
+		"header": 
+		{
+			"enable": false,
+			"text": "SubjectAreaView",
+			"textColor": 
+			[
+				"#FFFFFF"
+			],
+
+			"bgColor": 
+			[
+				"#777100",
+				"#662166"
+			],
+
+			"fontSize": "18",
+			"fontFamily": "Arial"
+		},
+
+		"subjectAreaListView": 
+		{
+			"bgColor": 
+			[
+				"#f8f8f8"
+			],
+
+			"itemStyle": 
+			{
+				"slectedImage": "selected",
+				"unSelectedImage": "un_selected",
+				"isRoundedCorner": false,
+				"bgColor": 
+				[
+					"#f8f8f8"
+				],
+
+				"textView": 
+				{
+					"textColor": 
+					[
+						"#000000"
+					],
+
+					"bgColor": 
+					[
+						
+					],
+
+					"fontSize": "18",
+					"fontFamily": "Arial"
+				}
+			},
+
+			"listItems": 
+			[
+				{
+					"id": 100,
+					"name": "Doctor",
+					"value": 1
+				},
+
+				{
+					"id": 101,
+					"name": "Patient",
+					"value": 2
+				},
+
+				{
+					"id": 102,
+					"name": "Nurse",
+					"value": 3
+				},
+
+				{
+					"id": 103,
+					"name": "Cash",
+					"value": 4
+				},
+
+				{
+					"id": 102,
+					"name": "Sweaper",
+					"value": 3
+				},
+
+				{
+					"id": 103,
+					"name": "Poen",
+					"value": 4
+				}
+			]
+		},
+
+		"rememberMe": 
+		{
+			"enable": true,
+			"bgColor": 
+			[
+				"#EdEdEd"
+			],
+
+			"text": "Abfragebereitsaufandremegeratbeantwork",
+			"textColor": 
+			[
+				"#929393"
+			],
+
+			"fontSize": 12,
+			"fontFamily": "Helvetica"
+		},
+
+		"submitButton": 
+		{
+			"text": "ok",
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"bgColor": 
+			[
+				"#559bce"
+			],
+
+			"bgImage": "",
+			"onPressColor": 
+			[
+				"#61a7da",
+				"#6B6Aaa"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				10
+			]
+		},
+
+		"remindLaterButton": 
+		{
+			"enable": true,
+			"text": "RemindmeLater",
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"bgColor": 
+			[
+				"#cffaad"
+			],
+
+			"bgImage": "",
+			"bgDefaultColor": 
+			[
+				"#60a6d9",
+				"#60a6d9"
+			],
+
+			"onPressColor": 
+			[
+				"#60a6d9",
+				"#6B6Aaa"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				10
+			]
+		},
+
+		"thankYouPopup": 
+		{
+			"enable": false,
+			"filePath": "SubjectAreaPopup/thankyou.html",
+			"autoLaunchTimeInterval": 
+			{
+				"enable": true,
+				"timeInterval": 
+				{
+					"days": 0,
+					"hours": 0,
+					"minuts": 0,
+					"seconds": 10
+				}
+			}
+		},
+
+		"webService": 
+		{
+			"webServiceURL": "http://www.bbinfotech.com/for_client/Alzheimer/Feedback_Alzhimer/Feedback_Alzhimer.php",
+			"webServiceSoapAction": "http://www.bbinfotech.com/for_client/Alzheimer/Feedback_Alzhimer",
+			"namespace": "http://www.bbinfotech.com/for_client/Alzheimer/",
+			"authenticateMethodName": "Feedback_Alzhimer"
+		},
+
+		"noSelectionMessage": 
+		{
+			"enable": true,
+			"bgColor": 
+			[
+				"#EdEdEd"
+			],
+
+			"text": "Bittetreffensieeineaus.guifdjkkkjfngjjfdkjhdfkkjhghkkdfkg.hkhkhkgjg",
+			"textColor": 
+			[
+				"#ff0000"
+			],
+
+			"fontSize": 12,
+			"fontFamily": "Helvetica"
+		}
+	},
+
+	"DrawImageView": 
+	{
+		"title": "",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "ImageDrawing"
+		},
+
+		"bgColor": 
+		[
+			"#DCDCDC",
+			"#DCDCDC",
+			"#BEBEBE",
+			"#BEBEBE"
+		],
+
+		"headingBar": 
+		{
+			"text": "",
+			"textColor": 
+			[
+				"#FF0d00"
+			],
+
+			"bgColor": 
+			[
+				"#777100",
+				"#662166"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18"
+		},
+
+		"visuospatialButton": 
+		{
+			"text": "VisuospatialButton",
+			"googleLogTitle": "VisuospatialButton",
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"bgColor": 
+			[
+				"#55ffce"
+			],
+
+			"onPressColor": 
+			[
+				"#00a7da",
+				"#9B6Aaa"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				0
+			]
+		},
+
+		"clockDrawingButton": 
+		{
+			"text": "clockDrawing",
+			"googleLogTitle": "clockDrawing",
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"bgColor": 
+			[
+				"#55ffce"
+			],
+
+			"onPressColor": 
+			[
+				"#00a7da",
+				"#9B6Aaa"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				25,
+				25,
+				0,
+				0
+			]
+		},
+
+		"saveButton": 
+		{
+			"text": "Save",
+			"googleLogTitle": "save",
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"bgColor": 
+			[
+				"#55ffce"
+			],
+
+			"onPressColor": 
+			[
+				"#00a7da",
+				"#9B6Aaa"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				25,
+				25,
+				0,
+				0
+			]
+		},
+
+		"resetButton": 
+		{
+			"text": "Reset",
+			"googleLogTitle": "reset",
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"bgColor": 
+			[
+				"#ff9bce"
+			],
+
+			"onPressColor": 
+			[
+				"#61a7da",
+				"#886Aaa"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				25,
+				25,
+				0,
+				0
+			]
+		},
+
+		"closeButton": 
+		{
+			"text": "close",
+			"googleLogTitle": "close",
+			"textColor": 
+			[
+				"#000000",
+				"#ffffff"
+			],
+
+			"bgColor": 
+			[
+				"#559bce"
+			],
+
+			"onPressColor": 
+			[
+				"#61a7da",
+				"#6B6Aaa"
+			],
+
+			"fontFamily": "Arial",
+			"fontSize": "18",
+			"radius": 
+			[
+				25,
+				25,
+				0,
+				0
+			]
+		},
+
+		"imageSavedMessage": "Imagehasbeensavedtothephotoslibrary"
+	},
+
+	"tutorialVideoView": 
+	{
+		"title": "90-SecEssensials",
+		"googleAnalyticsEvent": 
+		{
+			"enable": "true",
+			"viewName": "VideoListView"
+		},
+
+		"googleLogTitle": "VideoViewed",
+		"navigationBarContains": 
+		{
+			"leftViews": 
+			[
+				"home"
+			],
+
+			"rightViews": 
+			[
+				
+			]
+		},
+
+		"ClientIcon": 
+		{
+			"showLogoOnRightSideOfTopBar": "true",
+			"onclick": "27",
+			"target": "1006",
+			"extra": "http://www.escardio.org/"
+		},
+
+		"bgColor": 
+		[
+			"#ffffff"
+		],
+
+		"isMultiVideo": true,
+		"isListItemStyleSame": false,
+		"commonListItemStyle": 
+		{
+			"bgColor": 
+			[
+				"#f8f8f8",
+				"#c8c8c8"
+			],
+
+			"textColor": 
+			[
+				"#000000"
+			],
+
+			"fontSize": 20,
+			"fontFamily": "Helvetica"
+		},
+
+		"listBgColor": 
+		[
+			"#444444"
+		],
+
+		"videoItemList": 
+		[
+			{
+				"id": "21",
+				"name": "90-SecEssentials1",
+				"videoFileName": "essential_tutorial/aa.mp4",
+				"extra": "",
+				"leftImage": "essential_1",
+				"rightImage": "essential_1",
+				"bgColor": 
+				[
+					"#f8f8f8",
+					"#c8c8c8"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 20,
+				"fontFamily": "Helvetica"
+			},
+
+			{
+				"id": "21",
+				"name": "90-SecEssentials1",
+				"videoFileName": "essential_tutorial/aa.mp4",
+				"extra": "",
+				"leftImage": "essential_1",
+				"rightImage": "essential_1",
+				"bgColor": 
+				[
+					"#f8f8f8",
+					"#c8c8c8"
+				],
+
+				"textColor": 
+				[
+					"#000000"
+				],
+
+				"fontSize": 20,
+				"fontFamily": "Helvetica"
+			}
+		]
+	},
+
+	"membershipAlertPopup": 
+	{
+		"enable": false,
+		"alertForMemberShip": 
+		{
+			"message": "New guideline(s) available for download. Proceed with the download?",
+			"buttons": 
+			[
+				{
+					"text": "Yes",
+					"onClick": 13
+				},
+
+				{
+					"text": "Remind me later"
+				},
+
+				{
+					"text": "Do not ask again",
+					"onClick": 1023
+				}
+			]
+		},
+
+		"alertForDoNotAskAgain": 
+		{
+			"message": "We have noted your decision.\n If you change your mind. You will find the information on the infoscreen of  this app.",
+			"buttons": 
+			[
+				{
+					"text": "ok",
+					"onClick": -1
+				}
+			]
+		}
+	}
+}

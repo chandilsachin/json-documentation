@@ -231,16 +231,23 @@ function prepareObject(id, level, desc, showParentObject, search) {
 							.append(prepareObjectWithoutDel(r[r.length - 1].id,
 									level + 1, r[r.length - 1].desc));
 				}
-
+                                 var addButton = getUrlParameter("edit");
+                                if( addButton == "true")
+                                {
 				var addButton = $("<button onclick='addKey(" + id
 						+ ")'>Add key</button>");
 				var buttonAddObject = $("<button onclick='addObject(" + id
 						+ ")'>Add Object</button>");
+                                    }
 				if (r.length > 0)
 				{
 					container.append("\n" + braceTab + "}");
+                                         var addButton = getUrlParameter("edit");
+                                if( addButton == "true")
+                                {
 					container.append(addButton);
 					container.append(buttonAddObject);
+                                    }
 					container.append(",\n");
 				}
 				else {
@@ -357,16 +364,22 @@ function prepareObjectWithoutDel(id, level, desc) {
 							.append(prepareObjectWithoutDel(r[r.length - 1].id,
 									level + 1, r[r.length - 1].desc));
 				}
-
+                                var addButton = getUrlParameter("edit");
+                                if( addButton == "true")
+                                {
 				var addButton = $("<button onclick='addKey(" + id
 						+ ")'>Add key</button>");
 				var buttonAddObject = $("<button onclick='addObject(" + id
 						+ ")'>Add Object</button>");
+                                }
 				if (r.length > 0)
 				{
 					container.append("\n" + braceTab + "}");
+                                        if( addButton == "true")
+                                        {
 					container.append(addButton);
 					container.append(buttonAddObject);
+                                        }
 					container.append("\n");
 				}
 				else {
@@ -429,12 +442,16 @@ function prepareModuleList() {
 		input_select.fillData($("#module_list"), r);
 		WsClient.fetchKeyId("root", function(res) {
 			if (res.success) {
+                             var addButton = getUrlParameter("edit");
+                                if( addButton == "true")
+                                {
 				var addButton = $("<button onclick='addKey(" + res.keyId
 						+ ")'>Add key</button>");
 				var buttonAddObject = $("<button onclick='addObject("
 						+ res.keyId + ")'>Add Object</button>");
 				$("#navigation_bar").append(addButton);
 				$("#navigation_bar").append(buttonAddObject);
+                            }
 			}
 		});
 		var fetch = this.fetchChild;

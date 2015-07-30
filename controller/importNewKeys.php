@@ -50,15 +50,12 @@ if ($uploadOk == 0) {
 
 // $keyList = array();
 function extractKeys($filePath) {
-    $keyList = array();
-    $file = fopen($filePath, "r");
     $fileContent = file_get_contents($filePath); //fread($file, filesize($filePath));
     $jsonObject = json_decode($fileContent, true);
     browseNode(insertKey("root"), $jsonObject, 0);
 }
 
 function browseNode($parent, $jsonObject, $level) {
-    $keyList = array();
     if (!is_array($jsonObject))
         return;
     $level++;
@@ -66,7 +63,7 @@ function browseNode($parent, $jsonObject, $level) {
         //echo $row;
         if (!is_int($row)) {
 
-            $child_id = insertKey($row);
+            $child_id = insertKey($row,  gettype($val));
             echo "<br/> " . $child_id . "-" . $row . "<br/>";
             if (is_array($val))
                 makeAssoc($parent, $child_id, 0, $level);
