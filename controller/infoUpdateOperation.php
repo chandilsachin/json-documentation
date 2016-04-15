@@ -51,4 +51,9 @@ function deleteKeys($keys)
 {
 	return dropKeys($keys);
 }
+
+function myFunc()
+{
+return "My name is sachin.";
+}
 ?>
